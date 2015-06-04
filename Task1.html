@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+  </style>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Displaying text directions with <code>setPanel()</code></title>
+  <style>
+
+    html, body, #map-canvas
+    {
+      height: 100%;
+      margin: 0px;
+      padding: 0px
+    }
+
+  </style>
+  <style>
+
+    #directions-panel
+    {
+      height: 100%;
+      float: right;
+      float: bottom;
+      width: 20%;
+      overflow: auto;
+    }
+
+    #map-canvas
+    {
+        width: 80%;
+        hight: 100%;
+        float: left;
+        float: bottom;
+    }
+
+    #calc
+    {
+        width: 100%;
+        hight: 20%;
+        float: left;
+        float: top;
+    }
+
+  </style>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8Wr9qFMBNi9VCBCkonOo8qxODaR13QoA">
+  </script>
+
+  <script src="ScriptTask1.js"></script>
+
+</head>
+<body>
+<div id="calc">
+    <form name="calculator-form">
+        Address:  <input type="text" name="Address" size="55" id="address" />
+
+        <br />
+
+        Latitude: <input type="text" name="Latitude" id="lat" />
+        Longitude:<input type="text" name="Longitude" id="long" />
+
+        <br />
+
+        <input type="button" value="Calculate" onclick="calc()" />
+        <input type="reset" />
+    </form>
+</div>
+<div id="map-canvas"></div>
+<div id="directions-panel"></div>
+
+</body>
+</html>
