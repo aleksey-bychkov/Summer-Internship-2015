@@ -1,4 +1,6 @@
-google.maps.event.addDomListener(window, 'load', function()
+google.maps.event.addDomListener(window, 'load', new task2());
+
+function task2()
 {
     var center = new google.maps.LatLng(38.9055751, -77.0611825);
 
@@ -149,4 +151,4 @@ google.maps.event.addDomListener(window, 'load', function()
     directionsDisplay.setMap(map);
 
 
-})();
+}
