@@ -7,18 +7,23 @@ that.map = new google.maps.Map(document.getElementById('map-canvas'),
         zoom: 15
     });
 
+//returns an array
 function getData(url)
 {
-    $.getJSON(url)
-
-        .done(function(data)
+    $.ajax(
         {
-            alert(data)
-        })
-        .fail(function()
-        {
-            alert("Ajax failed to fetch data")
-        })
+            url: url,
+            jsonp: "callback",
+            dataType: "jsonp",
+            success: function(data)
+            {
+                return data;
+            },
+            error: function ()
+            {
+                alert("Failed to retrieve data!");
+            }
+        });
 }
 
 function placeMarkers()
@@ -35,6 +40,7 @@ function placeMarkers()
         var marker = new google.maps.Marker
         (
             {
+                color: red,
                 map: that.map,
                 title: x,
                 position: getLatLng(current)
