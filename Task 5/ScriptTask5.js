@@ -36,37 +36,47 @@ Eastbanc.Internship.Task5 = function()
        function place(information)
        {
            var markers = [];
+           var window;
+           var size = 25;
 
-
-           for(var index = 0; index < information.length; index++)
+           for(var index = information.length-1; index >= 0; index--)
            {
                (function makeMarkers()
                {
                    var current = information[index];
                    var latlng = new google.maps.LatLng(current.Lat, current.Lon);
 
+                   size *= .985;
+
+                   var image = {
+                       url: 'newMarker.png',
+                       // This marker is 20 pixels wide by 32 pixels tall.
+                       size: new google.maps.Size(size, size),
+                       // The origin for this image is 0,0.
+                       origin: new google.maps.Point(0,0)
+                   };
+
                    //makes the markers
                    var marker = new google.maps.Marker
                    (
                        {
                            map: that.map,
+                           icon: image,
                            title: index+"",
                            position: latlng
                        }
                    );
 
-                   google.maps.event.addListener(marker, 'click', function makeWindows()
-                   {
-                       //closes window if one exists
-                       if (window)
-                           window.close();
+                   var time = current.ReportDateUtc;
+                   time = time.substring(time.indexOf("(")+1, time.indexOf(")"));
+                   time = parseInt(time);
 
-                       var content = '<div id="content">' +
-                           '<div id="siteNotice">' +
-                           '</div>' +
-                           '<h1 id="firstHeading" class="firstHeading"></h1>' +
-                           '<div id="bodyContent">' +
-                           '<table>' +
+                   var content = '<div id="content">' +
+                       '<div id="siteNotice">' +
+                       '</div>' +
+                       '<h1 id="firstHeading" class="firstHeading"></h1>' +
+                       '<div id="bodyContent">' +
+                       '<table>' +
                            '<tr>' +
                            '<th>Agency Id</th><td>' + current.AgencyId + '</td>' +
                            '</tr>' +
@@ -80,15 +90,21 @@ Eastbanc.Internship.Task5 = function()
                            '<th>Location</th><td>' + latlng.toString() + '</td>' +
                            '</tr>' +
                            '<tr>' +
-                           '<th>Date</th><td>' + current.Date + '</td>' +
-                           '</tr>' +
-                           '<tr>' +
                            '<th>Vehicle Id</th><td>' + current.VehicleId + '</td>' +
                            '</tr>' +
-                           '</table>' +
-                           '</div>' +
-                           '</div>';
-                       
+                           '<tr>' +
+                           '<th>Time</th><td>' + time + '</td>' +
+                           '</tr>' +
+                       '</table>' +
+                       '</div>' +
+                       '</div>';
+
+                   google.maps.event.addListener(marker, 'click', function makeWindows()
+                   {
+                       //closes window if one exists
+                       if (window)
+                           window.close();
+
                        //makes and opens a new window for the current marker
                        window = new google.maps.InfoWindow
                        (
