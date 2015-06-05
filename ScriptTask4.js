@@ -15,12 +15,12 @@ Eastbanc.Internship.Task4 = function(origin)
         zoom: 15
     });
 
-    var makePage = function()
+    function makePage()
     {
         var markers = [];
 
         //makes and initializes map
-        that.map.fitBounds(map.getBounds());
+        that.map.fitBounds(that.map.getBounds());
 
         //makes and places the seacrh box
         var input =(document.getElementById('pac-input'));
@@ -28,7 +28,7 @@ Eastbanc.Internship.Task4 = function(origin)
         var searchBox = new google.maps.places.SearchBox((input));
 
         //action listner for the serchbox
-        google.maps.event.addListener(searchBox, 'places_changed', function()
+        google.maps.event.addListener(searchBox, 'places_changed', function searchFunction()
         {
             //gets an array of all places
             var places = searchBox.getPlaces();
@@ -47,7 +47,7 @@ Eastbanc.Internship.Task4 = function(origin)
             //places 10 markers
             for (var i =0; i<10; i++)
             {
-                (function ()
+                (function placeMarkers()
                 {
                     var index=i;
                     var marker = new google.maps.Marker
@@ -60,7 +60,7 @@ Eastbanc.Internship.Task4 = function(origin)
                     );
 
 
-                    google.maps.event.addListener(marker, 'click', function ()
+                    google.maps.event.addListener(marker, 'click', function makeWIndows()
                     {
                         //closes window if one exists
                         if (window)
@@ -87,10 +87,10 @@ Eastbanc.Internship.Task4 = function(origin)
                         window.open(that.map, marker);
 
                         //displays route when the button in the window is clicked
-                        document.getElementById("findRoute" + index.toString()).onclick=function()
+                        document.getElementById("findRoute" + index.toString()).onclick = function calculateRoute()
                         {
                             //returns the paramater as a latlng object
-                            function addressToLatlng(address)//problem
+                            function addressToLatlng(address)
                             {
                                 var latlng = new google.maps.LatLng();
                                 var geocoder = new google.maps.Geocoder();
@@ -146,7 +146,7 @@ Eastbanc.Internship.Task4 = function(origin)
         });
 
         //makes sure the seachbar can work
-        google.maps.event.addListener(that.map, 'bounds_changed', function()
+        google.maps.event.addListener(that.map, 'bounds_changed', function changeBounds()
         {
             searchBox.setBounds(that.map.getBounds());
         });
