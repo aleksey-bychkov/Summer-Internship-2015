@@ -19,7 +19,6 @@ html, body, #map-canvas
     width: 80%;
     hight: 100%;
     float: left;
-    float: bottom;
 }
 
 .controls {

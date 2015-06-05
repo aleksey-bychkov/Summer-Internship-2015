@@ -17,8 +17,6 @@ Eastbanc.Internship.Task4 = function(origin)
 
     function makePage()
     {
-
-
         var markers = [];
 
         //makes and initializes map
@@ -51,7 +49,7 @@ Eastbanc.Internship.Task4 = function(origin)
             {
                 (function placeMarkers()
                 {
-                    var index=i;
+                    var index = i;
                     var marker = new google.maps.Marker
                     (
                         {
@@ -60,7 +58,6 @@ Eastbanc.Internship.Task4 = function(origin)
                             position: places[i].geometry.location
                         }
                     );
-
 
                     google.maps.event.addListener(marker, 'click', function makeWIndows()
                     {
@@ -78,7 +75,7 @@ Eastbanc.Internship.Task4 = function(origin)
                                     '<h1 id="firstHeading" class="firstHeading"></h1>' +
                                     '<div id="bodyContent">' +
                                     '<form name="find-Route">' +
-                                    'Address from:  <input type="text" name="Address" size="55" id="address' + index.toString() + '" value="1211 31st St NW, Washington, DC 20007"/>' +
+                                        'Address from:  <input type="text" name="Address" size="55" id="address' + index.toString() + '" value="1211 31st St NW, Washington, DC 20007"/>' +
                                     '<input type="button" value="Find route to this point" id="findRoute' + index.toString() + '" />' +
                                     '</form>' +
                                     '</div>' +
