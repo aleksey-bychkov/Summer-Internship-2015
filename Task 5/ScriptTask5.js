@@ -38,11 +38,11 @@ Eastbanc.Internship.Task5 = function()
            var markers = [];
 
 
-           for(var x = 0; x < information.length; x++)
+           for(var index = 0; index < information.length; index++)
            {
                (function makeMarkers()
                {
-                   var current = information[x];
+                   var current = information[index];
                    var latlng = new google.maps.LatLng(current.Lat, current.Lon);
 
                    //makes the markers
@@ -50,7 +50,7 @@ Eastbanc.Internship.Task5 = function()
                    (
                        {
                            map: that.map,
-                           title: x+"",
+                           title: index+"",
                            position: latlng
                        }
                    );
@@ -61,37 +61,39 @@ Eastbanc.Internship.Task5 = function()
                        if (window)
                            window.close();
 
+                       var content = '<div id="content">' +
+                           '<div id="siteNotice">' +
+                           '</div>' +
+                           '<h1 id="firstHeading" class="firstHeading"></h1>' +
+                           '<div id="bodyContent">' +
+                           '<table>' +
+                           '<tr>' +
+                           '<th>Agency Id</th><td>' + current.AgencyId + '</td>' +
+                           '</tr>' +
+                           '<tr>' +
+                           '<th>Device Id</th><td>' + current.DeviceId + '</td>' +
+                           '</tr>' +
+                           '<tr>' +
+                           '<th>Is Standing</th><td>' + current.IsStanding + '</td>' +
+                           '</tr>' +
+                           '<tr>' +
+                           '<th>Location</th><td>' + latlng.toString() + '</td>' +
+                           '</tr>' +
+                           '<tr>' +
+                           '<th>Date</th><td>' + current.Date + '</td>' +
+                           '</tr>' +
+                           '<tr>' +
+                           '<th>Vehicle Id</th><td>' + current.VehicleId + '</td>' +
+                           '</tr>' +
+                           '</table>' +
+                           '</div>' +
+                           '</div>';
+                       
                        //makes and opens a new window for the current marker
                        window = new google.maps.InfoWindow
                        (
                            {
-                               content: info = '<div id="content">' +
-                                   '<div id="siteNotice">' +
-                                   '</div>' +
-                                   '<h1 id="firstHeading" class="firstHeading"></h1>' +
-                                   '<div id="bodyContent">' +
-                                   '<table>' +
-                                   '<tr>' +
-                                   '<th>Agency Id</th><td>' + current.AgencyId + '</td>' +
-                                   '</tr>' +
-                                   '<tr>' +
-                                   '<th>Device Id</th><td>' + current.DeviceId + '</td>' +
-                                   '</tr>' +
-                                   '<tr>' +
-                                   '<th>Is Standing</th><td>' + current.IsStanding + '</td>' +
-                                   '</tr>' +
-                                   '<tr>' +
-                                   '<th>Location</th><td>' + latlng.toString() + '</td>' +
-                                   '</tr>' +
-                                   '<tr>' +
-                                   '<th>Date</th><td>' + current.Date + '</td>' +
-                                   '</tr>' +
-                                   '<tr>' +
-                                   '<th>Vehicle Id</th><td>' + current.VehicleId + '</td>' +
-                                   '</tr>' +
-                                   '</table>' +
-                                   '</div>' +
-                                   '</div>'
+                               content: content
                            }
                        );
 
