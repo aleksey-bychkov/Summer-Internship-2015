@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScriptTask4.js" afterPath="$PROJECT_DIR$/ScriptTask4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task4.html" afterPath="$PROJECT_DIR$/Task4.html" />
-    </list>
+    <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="" />
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
