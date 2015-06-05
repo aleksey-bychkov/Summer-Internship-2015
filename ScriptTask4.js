@@ -17,6 +17,8 @@ Eastbanc.Internship.Task4 = function(origin)
 
     function makePage()
     {
+
+
         var markers = [];
 
         //makes and initializes map
@@ -162,6 +164,6 @@ Eastbanc.Internship.Task4 = function(origin)
 
     // constructor
     return {
-        makePage: makePage()
+        makePage: makePage
     };
 };
