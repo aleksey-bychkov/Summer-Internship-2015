@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 5/ScriptTask5-1.js" afterPath="$PROJECT_DIR$/Task 5/ScriptTask5-1.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 5/ScriptTask5.js" afterPath="$PROJECT_DIR$/Task 5/ScriptTask5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,24 +35,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask5.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScriptTask5.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22533633">
-              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask4.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 4/ScriptTask4.js">
+      <file leaf-file-name="ScriptTask5-1.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5-1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="47" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="47" />
-              <folding>
-                <element signature="e#3381#5630#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.5336323">
+              <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,6 +105,7 @@
         <option value="$PROJECT_DIR$/Task 3/Task3.html" />
         <option value="$PROJECT_DIR$/Task 4/Task4.html" />
         <option value="$PROJECT_DIR$/Task 5/Task5.html" />
+        <option value="$PROJECT_DIR$/Task 5/ScriptTask5-1.js" />
         <option value="$PROJECT_DIR$/Task 5/ScriptTask5.js" />
       </list>
     </option>
@@ -512,17 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5-1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="e#155#208#0" expanded="false" />
-            <element signature="n#!!block;n#getLatLng#0;n#!!block;n#placeMarkers#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 1/Task1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.86374134">
@@ -547,16 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 4/ScriptTask4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="47" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="47" />
-          <folding>
-            <element signature="e#3381#5630#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 5/Task5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.961538">
@@ -565,10 +545,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Task 4/ScriptTask4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66143495">
+          <caret line="71" column="47" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="47" />
+          <folding>
+            <element signature="e#3381#5630#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22533633">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5-1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5336323">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
           <folding />
         </state>
       </provider>
