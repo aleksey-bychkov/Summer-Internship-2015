@@ -7,13 +7,15 @@ Eastbanc.Internship = Eastbanc.Internship || {};
 // class
 Eastbanc.Internship.Task5 = function(map)
 {
+    //makes the map
     var that = this;
     that.map = map;
 
-    function placeMarker(data, markerImage)
+    function placeMarker(data, markerImage, startSize, endSize)
     {
-       place(data, markerImage);
-        
+       place(data, markerImage, startSize, endSize);
+
+        //places markers at each data point
         function place(data, markerImage, startSize, endSize)
         {
             var markers = [];
@@ -30,12 +32,11 @@ Eastbanc.Internship.Task5 = function(map)
 
                     size *= increment;
 
+                    //makes the image for the marker to use
                     var image =
                     {
                         url: markerImage,
-                        // This marker is 20 pixels wide by 32 pixels tall.
                         size: new google.maps.Size(size, size),
-                        // The origin for this image is 0,0.
                         origin: new google.maps.Point(size/2,size/2)
                     };
 
@@ -54,6 +55,7 @@ Eastbanc.Internship.Task5 = function(map)
                     time = time.substring(time.indexOf("(")+1, time.indexOf(")"));
                     time = parseInt(time);
 
+                    //information in the infoWindow
                     var content = '<div id="content">' +
                         '<div id="siteNotice">' +
                         '</div>' +
@@ -82,6 +84,7 @@ Eastbanc.Internship.Task5 = function(map)
                         '</div>' +
                         '</div>';
 
+                    //makes the window when the marker is clicked
                     google.maps.event.addListener(marker, 'click', function makeWindows()
                     {
                         //closes window if one exists
@@ -111,7 +114,7 @@ Eastbanc.Internship.Task5 = function(map)
 
     // constructor
     return{
-        placeMarkers: placeMarker(data, markerImage)
+        placeMarkers: placeMarker(data, markerImage, startSize, endSize)
     };
 
 };
