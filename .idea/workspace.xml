@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task 6/ScriptTask6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task 6/StyleTask6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task 6/Task6.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 5/ScriptTask5-1.js" afterPath="$PROJECT_DIR$/Task 5/ScriptTask5-1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,41 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Task5.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 5/Task5.html">
+      <file leaf-file-name="Task6.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 6/Task6.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.961538">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+            <state vertical-scroll-proportion="-17.653847">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask5.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5.js">
+      <file leaf-file-name="ScriptTask6.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Task 6/ScriptTask6.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6208696">
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StyleTask6.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 6/StyleTask6.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptTask5-1.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5-1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3049327">
-              <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StyleTask5.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 5/StyleTask5.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,6 +100,10 @@
         <option value="$PROJECT_DIR$/Task 5/Task5.html" />
         <option value="$PROJECT_DIR$/Task 5/ScriptTask5.js" />
         <option value="$PROJECT_DIR$/Task 5/ScriptTask5-1.js" />
+        <option value="$PROJECT_DIR$/Task 6/Task6.js" />
+        <option value="$PROJECT_DIR$/Task 6/StyleTask6.css" />
+        <option value="$PROJECT_DIR$/Task 6/Task6.html" />
+        <option value="$PROJECT_DIR$/Task 6/ScriptTask6.js" />
       </list>
     </option>
   </component>
@@ -116,10 +115,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
+    <option name="x" value="-2409" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="width" value="2418" />
+    <option name="height" value="1308" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -152,6 +151,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="untitled" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summer-Internship-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task 6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -251,10 +264,7 @@
       <recent name="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Task5.html">
-    <configuration default="false" name="Task2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/Task 2/Task2.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.Task6.html">
     <configuration default="false" name="Task1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/Task 1/Task1.html">
       <method />
     </configuration>
@@ -265,6 +275,9 @@
       <method />
     </configuration>
     <configuration default="false" name="Task5.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/Task 5/Task5.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="Task6.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/Task 6/Task6.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -306,19 +319,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task2.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task1.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task3.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task4.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Task5.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task1.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task3.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task4.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task5.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Task6.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task5.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task4.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task3.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task1.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Task2.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task6.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task5.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task4.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task3.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Task1.html" />
       </list>
     </recent_temporary>
   </component>
@@ -336,10 +349,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-2409" y="-9" width="2418" height="1308" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24895833" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19916667" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -372,14 +385,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Task 5/ScriptTask5-1.js</url>
-          <line>88</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -534,22 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 5/StyleTask5.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 5/Task5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 4/ScriptTask4.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.66143495">
@@ -560,18 +550,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5.js">
+    <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5-1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5-1.js">
+    <entry file="file://$PROJECT_DIR$/Task 5/StyleTask5.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3049327">
-          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 5/Task5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 6/StyleTask6.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 6/Task6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 6/ScriptTask6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6208696">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding />
         </state>
       </provider>

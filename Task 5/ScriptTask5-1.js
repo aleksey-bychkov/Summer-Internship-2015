@@ -18,10 +18,12 @@ Eastbanc.Internship.Task5 = function(map)
         //places markers at each data point
         function place(data, markerImage, startSize, endSize)
         {
+            var start = startSize;
+            var end = endSize;
             var markers = [];
             var window;
             var size = startSize;
-            var increment = (startSize - endSize)/data.length;
+            var increment = (start - end)/data.length;
 
             for(var index = data.length-1; index >= 0; index--)
             {
