@@ -63,9 +63,29 @@ Time = function(pyear, pmonth, pdate, phour, pminute, psecond)
 
     function wrap()
     {
-        if(second > 60)
+        if(that.second >= 60)
         {
-            //second
+            that.minutes += Math.floor(that.second/60);
+            that.second %= 60;
+        }
+        if(that.minutes >= 60)
+        {
+            that.hour += Math.floor(that.minutes/60);
+            that.minutes %= 60;
+        }
+        if(that.hour >= 24)
+        {
+            that.date += Math.floor(that.hour/24);
+            that.hour %= 24;
+        }
+        if(that.date >= 27)
+        {
+            if(that.date >= 27)//1 3 5 7 8 10 12
+        }
+        if(that.month > 12)
+        {
+            that.year += Math.floor(that.month/12);
+            that.month %= 12;
         }
     }
 
