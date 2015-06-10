@@ -14,7 +14,7 @@
 <body>
 
     <div>
-        <select id="drop-down" onchange="upDate()">
+        <select id="drop-down" onchange="upDate();">
             <option value="last15">Last 15 Minutes</option>
             <option value="last30">Last 30 Minutes</option>
             <option value="last60">Last Hour</option>
@@ -26,8 +26,7 @@
     </div>
 
     <script>
-        var timePassed = new Time(0, 0, 0, 0, 15, 0);
-        var calculateTime = new Eastbanc.Internship.Task6(timePassed);
+        var calculateTime = new Eastbanc.Internship.Task6(15*60000);
 
         upDate();
 
@@ -35,24 +34,24 @@
         {
             if(document.getElementById("drop-down").value == "last15")
             {
-                timePassed = new Time(0, 0, 0, 0, 15, 0);
+                timePassed = 15*60000;
             }
             else if(document.getElementById("drop-down").value == "last30")
             {
-                timePassed = new Time(0, 0, 0, 0, 30, 0);
+                timePassed = 30*60000;
             }
             else if(document.getElementById("drop-down").value == "last60")
             {
-                timePassed = new Time(0, 0, 0, 60, 0, 0);
+                timePassed = 60*60000;
             }
             else if(document.getElementById("drop-down").value == "lastDay")
             {
-                timePassed = new Time(0, 0, 1, 0, 0, 0);
+                timePassed = 24*60*60000;
             }
 
-            calculateTime.update(timePassed);
-            document.getElementById("from-ute").innerHTML = "From Ute: " + calculateTime.fromUTE.toString();
-            document.getElementById("to-ute").innerHTML = "To Ute:   " + calculateTime.toUTE.toString();
+            calculateTime = calculateTime.update(timePassed);
+            document.getElementById("from-ute").innerHTML = "From Ute: " + calculateTime.fromUTE;
+            document.getElementById("to-ute").innerHTML = "To Ute:   " + calculateTime.toUTE;
         }
 
     </script>

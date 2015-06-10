@@ -7,23 +7,30 @@ Eastbanc.Internship = Eastbanc.Internship || {};
 // class
 Eastbanc.Internship.Task6 = function(toAdd)
 {
-    var d = new Date();
-    var fromUTE = new Time(d.getFullYear(), d.getMonth()+1, d.getDate(), d.getHours(), d.getMinutes(), d.getSeconds());
-    var toUTE;
+    var that = this;
+    that.toUTE = new Date();
+    that.fromUTE = new Date();
 
     update(toAdd);
 
-    //updates toUTE from the toAdd
+    //updates fromUTE from the toAdd
     function update(toAdd)
     {
-        toUTE = new Time();
-        toUTE.add(fromUTE);
-        toUTE.add(toAdd);
+        that.toUTE = new Date();
+        that.fromUTE.setTime(that.toUTE.getTime() - toAdd);
+
+        return{
+            toUTE: (that.toUTE.toJSON()).substr(0,19),
+            fromUTE: (that.fromUTE.toJSON()).substr(0,19),
+            update: update
+        };
     }
 
+    this.update = update;
+
     return{
-        fromUTE: fromUTE.toString(),
-        toUTE: toUTE.toString(),
+        toUTE: (that.toUTE.toJSON()).substr(0,19),
+        fromUTE: (that.fromUTE.toJSON()).substr(0,19),
         update: update
     };
 };
@@ -80,14 +87,21 @@ Time = function(pyear, pmonth, pdate, phour, pminute, psecond)
         }
         if(that.date >= 27)
         {
-            if(that.date >= 27)//1 3 5 7 8 10 12
+            if(that.date >= 28)//1 3 5 7 8 10 12 for 31
+            {
+                if(that.month === 2 && that.year%4 !== 0)
+                {
+
+                }
+            }
+            }
+            if(that.month > 12)
+            {
+                that.year += Math.floor(that.month/12);
+                that.month %= 12;
+            }
         }
-        if(that.month > 12)
-        {
-            that.year += Math.floor(that.month/12);
-            that.month %= 12;
-        }
-    }
+
 
     //returns time as a String
     function toString()
@@ -139,6 +153,9 @@ Time = function(pyear, pmonth, pdate, phour, pminute, psecond)
         return toReturn;
     }
 
+    this.toString = toString;
+    this.add = add;
+
     return{
         year: that.year,
         month: that.month,
@@ -148,5 +165,7 @@ Time = function(pyear, pmonth, pdate, phour, pminute, psecond)
         second: that.second,
         add: add,
         toString: toString
-    }
+    };
+
+
 };
