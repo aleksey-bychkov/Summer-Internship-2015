@@ -4,10 +4,16 @@ var task7 = (function()
     {
         update: updateInfo,
         setMap: setMap,
-        place: place
+        place: place,
+        setNotNullImage: setNotNullImage,
+        setNullImage: setNullImage,
+        clearMarkers: clearMap
     };
 
     var map;
+    var markerImageNotNull = 'markerImageNotNull.png';
+    var markerImageNull = 'markerImageNull.png';
+    var markers = [];
     var url =
     {
         pathway: "http://transitiqdatareceiver.cloudapp.net/DataReceiver.svc/GetRawCoords",
@@ -39,9 +45,22 @@ var task7 = (function()
         map = pmap;
     }
 
+
+    function setNullImage(pmarkerImage)
+    {
+        markerImageNull = pmarkerImage;
+    }
+
+    function setNotNullImage(pmarkerImage)
+    {
+        markerImageNotNull = pmarkerImage;
+    }
+
     //public method that places markers on the map using the information it has
     function place()
     {
+        clearMap();
+
         $.ajax(
             {
                 url: url.toString(),
@@ -60,9 +79,9 @@ var task7 = (function()
         //takes in an array of JSON objects and adds makers on a map based off of the array
         function placeMarkers(information)
         {
-            var markers = [];
+            markers = [];
             var infoWindow;
-            var size = 25;
+            var size = 30;
 
             for(var index = information.length-1; index >= 0; index--)
             {
@@ -70,15 +89,19 @@ var task7 = (function()
                 {
                     var current = information[index];
                     var latlng = new google.maps.LatLng(current.Lat, current.Lon);
+                    var markerImage= markerImageNotNull;
 
-                    size *= .985;
+                    var mSize = (index * size)/information.length;
+
+                    if(current.DeviceId == null)
+                        markerImage= markerImageNull;
 
                     var image = {
-                        url: 'newMarker.png',
+                        url: markerImage,
                         // This marker is 20 pixels wide by 32 pixels tall.
-                        size: new google.maps.Size(size, size),
+                        size: new google.maps.Size(mSize, mSize),
                         // The origin for this image is 0,0.
-                        origin: new google.maps.Point(size/2,size/2)
+                        origin: new google.maps.Point(mSize/2,mSize/2)
                     };
 
                     //makes the markers
@@ -150,4 +173,17 @@ var task7 = (function()
         }
     }
 
+    //clears the map of all markers
+    function clearMap()
+    {
+        if(markers.length > 0)
+        {
+            for (var i = 0; i < markers.length; i++)
+            {
+                markers[i].setMap(null);
+            }
+        }
+
+        markers = [];
+    }
 })();

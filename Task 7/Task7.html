@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
-    <title>Task 5 Bus tracker</title>
+    <title>Task 7</title>
 
     <link rel="stylesheet" href="StyleTask7.css" />
 
@@ -37,6 +37,7 @@
     <br />
 
     <input type="button" value="Place Markers" id="btnPlaceMarkers" onclick="btnPlaceMarkers()"/>
+    <input type="button" value="Clear Markers" id="btnClearMarkers" onclick="btnClearMarkers()"/>
 </div>
 <div id="map-canvas"></div>
 <script>
@@ -54,8 +55,13 @@
 
     function btnPlaceMarkers()
     {
-        task7.update(document.getElementById("urlHeader"), document.getElementById("vehicleId"),document.getElementById("key"), new Date(), new Date((new Date().getTime() - ((document.getElementById("drop-down").value) * 60000))));
+        task7.update(document.getElementById("urlHeader").value, document.getElementById("vehicleId").value, document.getElementById("key").value, new Date(), new Date((new Date().getTime() - ((document.getElementById("drop-down").value) * 60000))));
         task7.place();
+    }
+
+    function btnClearMarkers()
+    {
+        task7.clearMarkers();
     }
 
 </script>
