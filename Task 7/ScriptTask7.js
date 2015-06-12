@@ -200,13 +200,13 @@ function setList(toAddTo, toAdd)
         {
             var current = toAdd[index];
 
-            var busList = document.createElement("li");
-            busList.id = "Bus" + index;
-
+            var busListNode = document.createElement("li");
+            busListNode.id = "Bus" + index;
             var bus = document.createTextNode("" + current);
-            busList.appendChild(bus);
+            
+            busListNode.appendChild(bus);
 
-            toAddTo.appendChild(busList);
+            toAddTo.appendChild(busListNode);
         })();
     }
 }

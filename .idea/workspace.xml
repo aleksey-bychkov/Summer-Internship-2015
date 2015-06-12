@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/ScriptTask7.js" afterPath="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/StyleTask7.css" afterPath="$PROJECT_DIR$/Task 7/StyleTask7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/Task7.html" afterPath="$PROJECT_DIR$/Task 7/Task7.html" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Task7.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Task7.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76443416">
-              <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+            <state vertical-scroll-proportion="-24.807692">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask7.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScriptTask7.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="190" column="5" selection-start-line="190" selection-start-column="5" selection-end-line="190" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.7701794">
+              <caret line="203" column="43" selection-start-line="203" selection-start-column="43" selection-end-line="203" selection-end-column="43" />
               <folding>
                 <element signature="e#422#931#0" expanded="false" />
                 <element signature="n#!!block;n#updateInfo#0;n#!!block;n#doThings#0" expanded="false" />
@@ -647,10 +645,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.807692">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="190" column="5" selection-start-line="190" selection-start-column="5" selection-end-line="190" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.7701794">
+          <caret line="203" column="43" selection-start-line="203" selection-start-column="43" selection-end-line="203" selection-end-column="43" />
           <folding>
             <element signature="e#422#931#0" expanded="false" />
             <element signature="n#!!block;n#updateInfo#0;n#!!block;n#doThings#0" expanded="false" />
@@ -660,14 +666,6 @@
             <element signature="n#!!block;n#place#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76443416">
-          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
