@@ -173,6 +173,16 @@ function doThings()
                 })();
             }
 
+            centerMap(information[0], information[information.length-1]);
+        }
+
+
+        function centerMap(point1, point2)
+        {
+            var lat = (point1.lat + point2.lat)/2;
+            var lng = (point1.lng + point2.lng)/2;
+
+            map.setCenter(new google.maps.LatLng(lat,lng));
         }
     }
 
@@ -191,22 +201,34 @@ function doThings()
     }
 }
 
-
-function setList(toAddTo, toAdd)
+function setList(toAddToElement, toAdd)
 {
-    for(var index = 0; index > toAdd.length; index++)
+    for(var index = 0; index < toAdd.length; index++)
     {
         (function addBuses()
         {
-            var current = toAdd[index];
-
+            var current = buses[index];
             var busListNode = document.createElement("li");
             busListNode.id = "Bus" + index;
+
             var bus = document.createTextNode("" + current);
-            
+            busListNode.className = "notSelected";
+
             busListNode.appendChild(bus);
 
-            toAddTo.appendChild(busListNode);
+            busListNode.onclick = function ()
+            {
+
+                var old = $("#bus-list-1").find(".selected");
+                for(var x=0; x<old.length; x++)
+                {
+                    old[x].className = "notSelected";
+                }
+
+                busListNode.className = "selected";
+            };
+
+            document.getElementById(toAddToElement).appendChild(busListNode);
         })();
     }
 }

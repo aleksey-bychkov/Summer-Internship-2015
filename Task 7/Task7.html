@@ -21,8 +21,6 @@
     <form>
         URL Header: <input type="text" name="urlHeader" size="100" id="urlHeader" value="http://transitiqdatareceiver.cloudapp.net/DataReceiver.svc/GetRawCoords"/>
         <br />
-        Vehicle ID: <input type="text" name="vehicleId" size="100" id="vehicleId" value="1103"/>
-        <br />
         Agency ID(Key): <input type="text" name="agencyId" size="100" id="key" value="DcCi"/>
     </form>
 
@@ -34,37 +32,36 @@
         <option value="60" id="last60">Last Hour</option>
     </select>
 
-    <br />
-
     <input type="button" value="Place Markers" id="btnPlaceMarkers" onclick="btnPlaceMarkers()"/>
     <input type="button" value="Clear Markers" id="btnClearMarkers" onclick="btnClearMarkers()"/>
 </div>
 <div id="map-canvas"></div>
 <div id="bus-numbers">
+    <p><strong>Vehicle ID</strong></p>
     <ul id="bus-list-1">
     </ul>
 </div>
 <script>
     var task7 = doThings();
-    var buses = [102,1101,1105,1106,1108,1109,1110,1111,1112,1113,1114,1115,1116,1117,1119,1120,1121,1122,1123,1124,1125,1126,1127,1128,1129,1130,1131,1132,1133,1134,1135,1136,1137,1138,1140,1141,1142,1143,1144,1145,1146,1147,1149,"A48","A49","A50","A51"];
+    var buses = [1101,1105,1106,1108,1109,1110,1111,1112,1113,1114,1115,1116,1117,1119,1120,1121,1122,1123,1124,1125,1126,1127,1128,1129,1130,1131,1132,1133,1134,1135,1136,1137,1138,1140,1141,1142,1143,1144,1145,1146,1147,1149,"A48","A49","A50","A51"];
 
     google.maps.event.addDomListener(window, 'load', function load()
     {
-        //var map = new google.maps.Map(document.getElementById('map-canvas'),
-       // {
-         //   center: new google.maps.LatLng(38.9055751, -77.0611825),
-           // zoom: 15
-        //});
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+        {
+            center: new google.maps.LatLng(38.9055751, -77.0611825),
+            zoom: 15
+        });
 
-       // task7.setMap(map);
-        //task7.place();
+        task7.setMap(map);
+        task7.place();
 
-        setList(document.getElementById("bus-list-1"), buses);
+        setList("bus-list-1", buses);
     });
 
     function btnPlaceMarkers()
     {
-        task7.update(document.getElementById("urlHeader").value, document.getElementById("vehicleId").value, document.getElementById("key").value, new Date(), new Date((new Date().getTime() - ((document.getElementById("drop-down").value) * 60000))));
+        task7.update(document.getElementById("urlHeader").value, $("#bus-list-1").find(".selected")[0].value, document.getElementById("key").value, new Date(), new Date((new Date().getTime() - ((document.getElementById("drop-down").value) * 60000))));
         task7.place();
     }
 
