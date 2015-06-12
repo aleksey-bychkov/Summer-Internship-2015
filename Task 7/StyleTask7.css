@@ -5,8 +5,19 @@ html, body, #map-canvas
     padding: 0px
 }
 
+ul
+{
+    list-style-type:none;
+}
+
 #map-canvas
 {
-    width: 100%;
+    width: 80%;
+    hight: 100%;
+}
+
+#bus-numbers
+{
+    width: 20%;
     hight: 100%;
 }

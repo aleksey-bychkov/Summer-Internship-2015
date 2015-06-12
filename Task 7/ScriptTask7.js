@@ -1,4 +1,4 @@
-var task7 = (function()
+function doThings()
 {
     var publicAPI =
     {
@@ -7,7 +7,8 @@ var task7 = (function()
         place: place,
         setNotNullImage: setNotNullImage,
         setNullImage: setNullImage,
-        clearMarkers: clearMap
+        clearMarkers: clearMap,
+        setList: setList
     };
 
     var map;
@@ -40,17 +41,19 @@ var task7 = (function()
         url.fromUTC = pfromUTC;
     }
 
+    //sets the map the the paramater map
     function setMap(pmap)
     {
         map = pmap;
     }
 
-
+    //sets the image for the marker that show that the DeviceID is null
     function setNullImage(pmarkerImage)
     {
         markerImageNull = pmarkerImage;
     }
 
+    //sets the image for the marker that show that the DeviceID isn't null
     function setNotNullImage(pmarkerImage)
     {
         markerImageNotNull = pmarkerImage;
@@ -186,4 +189,24 @@ var task7 = (function()
 
         markers = [];
     }
-})();
+}
+
+
+function setList(toAddTo, toAdd)
+{
+    for(var index = 0; index > toAdd.length; index++)
+    {
+        (function addBuses()
+        {
+            var current = toAdd[index];
+
+            var busList = document.createElement("li");
+            busList.id = "Bus" + index;
+
+            var bus = document.createTextNode("" + current);
+            busList.appendChild(bus);
+
+            toAddTo.appendChild(busList);
+        })();
+    }
+}

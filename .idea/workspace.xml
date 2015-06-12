@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/markerImageNotNull.png" afterPath="$PROJECT_DIR$/Task 7/markerImageNotNull.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/markerImageNull.png" afterPath="$PROJECT_DIR$/Task 7/markerImageNull.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/ScriptTask7.js" afterPath="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/StyleTask7.css" afterPath="$PROJECT_DIR$/Task 7/StyleTask7.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/Task7.html" afterPath="$PROJECT_DIR$/Task 7/Task7.html" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,30 +25,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Task7.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Task7.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.961538">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-              <folding>
-                <element signature="e#1766#2047#0" expanded="false" />
-                <element signature="e#2084#2121#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.76443416">
+              <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask7.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScriptTask7.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54347825">
-              <caret line="79" column="42" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="190" column="5" selection-start-line="190" selection-start-column="5" selection-end-line="190" selection-end-column="5" />
               <folding>
-                <element signature="e#1151#1307#0" expanded="false" />
-                <element signature="e#1339#1366#0" expanded="false" />
-                <element signature="e#1413#1460#0" expanded="false" />
-                <element signature="e#1509#1559#0" expanded="false" />
-                <element signature="e#5941#6144#0" expanded="false" />
+                <element signature="e#422#931#0" expanded="false" />
+                <element signature="n#!!block;n#updateInfo#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#setNullImage#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#setNotNullImage#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#place#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,17 +57,7 @@
         <entry file="file://$PROJECT_DIR$/Task 7/StyleTask7.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptTask5-1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5-1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -118,10 +108,10 @@
         <option value="$PROJECT_DIR$/Task 6/StyleTask6.css" />
         <option value="$PROJECT_DIR$/Task 6/ScriptTask6.js" />
         <option value="$PROJECT_DIR$/Task 6/Task6.html" />
-        <option value="$PROJECT_DIR$/Task 7/Task7.html" />
         <option value="$PROJECT_DIR$/Task 5/ScriptTask5.js" />
-        <option value="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
         <option value="$PROJECT_DIR$/Task 7/StyleTask7.css" />
+        <option value="$PROJECT_DIR$/Task 7/Task7.html" />
+        <option value="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
       </list>
     </option>
   </component>
@@ -133,10 +123,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2409" />
+    <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="2418" />
-    <option name="height" value="1308" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -382,10 +372,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2409" y="-9" width="2418" height="1308" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17458333" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21822916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -652,33 +642,32 @@
     <entry file="file://$PROJECT_DIR$/Task 7/StyleTask7.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.961538">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <element signature="e#1766#2047#0" expanded="false" />
-            <element signature="e#2084#2121#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54347825">
-          <caret line="79" column="42" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="190" column="5" selection-start-line="190" selection-start-column="5" selection-end-line="190" selection-end-column="5" />
           <folding>
-            <element signature="e#1151#1307#0" expanded="false" />
-            <element signature="e#1339#1366#0" expanded="false" />
-            <element signature="e#1413#1460#0" expanded="false" />
-            <element signature="e#1509#1559#0" expanded="false" />
-            <element signature="e#5941#6144#0" expanded="false" />
+            <element signature="e#422#931#0" expanded="false" />
+            <element signature="n#!!block;n#updateInfo#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setNullImage#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setNotNullImage#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#place#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76443416">
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
