@@ -61,7 +61,7 @@
 
     function btnPlaceMarkers()
     {
-        task7.update(document.getElementById("urlHeader").value, $("#bus-list-1").find(".selected")[0].value, document.getElementById("key").value, new Date(), new Date((new Date().getTime() - ((document.getElementById("drop-down").value) * 60000))));
+        task7.update(document.getElementById("urlHeader").value, ($("#bus-list-1").find(".selected"))[0].innerHTML, document.getElementById("key").value, new Date(), new Date((new Date().getTime() - ((document.getElementById("drop-down").value) * 60000))));
         task7.place();
     }
 

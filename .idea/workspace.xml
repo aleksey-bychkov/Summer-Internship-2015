@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/ScriptTask7.js" afterPath="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/StyleTask7.css" afterPath="$PROJECT_DIR$/Task 7/StyleTask7.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/Task7.html" afterPath="$PROJECT_DIR$/Task 7/Task7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +27,8 @@
       <file leaf-file-name="Task7.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0">
-              <caret line="51" column="42" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="42" />
+            <state vertical-scroll-proportion="-19.26923">
+              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -41,14 +38,14 @@
         <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7141256">
-              <caret line="179" column="42" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
+              <caret line="182" column="9" selection-start-line="182" selection-start-column="9" selection-end-line="182" selection-end-column="9" />
               <folding>
                 <element signature="n#!!block;n#updateInfo#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setNullImage#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setNotNullImage#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="e#2663#6049#0" expanded="false" />
                 <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#setList#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -444,8 +441,8 @@
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setNullImage#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setNotNullImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="e#2663#6049#0" expanded="false" />
             <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setList#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -660,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0">
-          <caret line="51" column="42" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="42" />
+        <state vertical-scroll-proportion="-19.26923">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -669,14 +666,14 @@
     <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7141256">
-          <caret line="179" column="42" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
+          <caret line="182" column="9" selection-start-line="182" selection-start-column="9" selection-end-line="182" selection-end-column="9" />
           <folding>
             <element signature="n#!!block;n#updateInfo#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setNullImage#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setNotNullImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="e#2663#6049#0" expanded="false" />
             <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setList#0" expanded="false" />
           </folding>
         </state>
       </provider>

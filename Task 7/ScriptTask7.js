@@ -71,7 +71,10 @@ function doThings()
                 dataType: "jsonp",
                 success: function(data)
                 {
-                    placeMarkers(data);
+                    if(data.length >= 1)
+                        placeMarkers(data);
+                    else
+                        alert("Data was empty");
                 },
                 error: function ()
                 {
@@ -85,6 +88,7 @@ function doThings()
             markers = [];
             var infoWindow;
             var size = 30;
+            var bounds = map.getBounds();
 
             for(var index = information.length-1; index >= 0; index--)
             {
@@ -93,6 +97,8 @@ function doThings()
                     var current = information[index];
                     var latlng = new google.maps.LatLng(current.Lat, current.Lon);
                     var markerImage= markerImageNotNull;
+
+                    bounds.extend(latlng);
 
                     var mSize = (index * size)/information.length;
 
@@ -173,16 +179,7 @@ function doThings()
                 })();
             }
 
-            centerMap(information[0], information[information.length-1]);
-        }
-
-
-        function centerMap(point1, point2)
-        {
-            var lat = (point1.lat + point2.lat)/2;
-            var lng = (point1.lng + point2.lng)/2;
-
-            map.setCenter(new google.maps.LatLng(lat,lng));
+            map.fitBounds(bounds);
         }
     }
 
