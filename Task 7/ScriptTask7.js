@@ -8,15 +8,17 @@ function doThings()
         updateTime: updateTime,
         updateDate: updateDate,
         updateVehicleId: updateVehicleId,
+        updateShowingOnlyNextBus: updateShowingOnlyNextBus,
         setBase: setBase,
         setMap: setMap,
-        setNullImage: setNullImage,
-        setNotNullImage: setNotNullImage
+        setNextBusImage: setNextBusImage,
+        setTransitIQImage: setTransitIQImage
     };
 
     var map;
-    var markerImageNotNull = 'markerImageNotNull.png';
-    var markerImageNull = 'markerImageNull.png';
+    var showingOnlyNextBus = false;
+    var transitIQImage = 'transitIQ.png';
+    var nextBusImage = 'nextBus.png';
     var markers = [];
     var url =
     {
@@ -40,7 +42,6 @@ function doThings()
     return publicAPI;
 
     //updates the variables inside.
-    // 1) 4 param takes in a path, vehicleId, key, a start time(Date object) and and end time(A Date object)
     function setBase(pmarkers, pkey, pbusList)
     {
         url.markers = pmarkers;
@@ -55,15 +56,15 @@ function doThings()
     }
 
     //sets the image for the marker that show that the DeviceID is null
-    function setNullImage(pmarkerImage)
+    function setNextBusImage(pmarkerImage)
     {
-        markerImageNull = pmarkerImage;
+        nextBusImage = pmarkerImage;
     }
 
     //sets the image for the marker that show that the DeviceID isn't null
-    function setNotNullImage(pmarkerImage)
+    function setTransitIQImage(pmarkerImage)
     {
-        markerImageNotNull = pmarkerImage;
+        transitIQImage = pmarkerImage;
     }
 
     //sets the VehicleId to the paramater
@@ -84,6 +85,12 @@ function doThings()
 
         url.toUTC = ptoUTC;
         url.fromUTC = pfromUTC;
+    }
+
+    function updateShowingOnlyNextBus()
+    {
+        showingOnlyNextBus = !showingOnlyNextBus;
+        show();
     }
 
     //adds the
@@ -138,12 +145,45 @@ function doThings()
                         busListNode.className = "selected";
 
                         updateVehicleId(current.VehicleId);
-                        updateTime((new Date()), new Date((new Date()).getTime() +(document.getElementById(timeID).value) * 60000));
+                        updateTime((new Date()), new Date((new Date()).getTime() - (document.getElementById(timeID).value) * 60000));
                         placeMarkers();
                     };
 
                     document.getElementById(addElementID).appendChild(busListNode);
                 })();
+            }
+        }
+    }
+
+    //if param is false shows null if true shows all
+    function show()
+    {
+        if(showingOnlyNextBus)
+        {
+            showWhat(nextBusImage);
+        }
+        else
+        {
+            showWhat();
+        }
+
+        //if what is 
+        function showWhat(image)
+        {
+            for(var index = 0; index < markers.length; index++)
+            {
+                var current = markers[index];
+
+                if(image !== undefined)
+                    current.setMap(map);
+                else
+                {
+                    if(current.icon.url != image)
+                        current.setMap(null);
+                    else
+                        current.setMap(map);
+                }
+
             }
         }
     }
@@ -174,6 +214,8 @@ function doThings()
                 }
             });
 
+        show();
+
         //takes in an array of JSON objects and adds makers on a map based off of the array
         function place(information)
         {
@@ -190,7 +232,7 @@ function doThings()
                 (function makeMarkers()
                 {
                     var current = information[index];
-                    var markerImage = markerImageNotNull;
+                    var markerImage = transitIQImage;
 
                     latlng = new google.maps.LatLng(current.Lat, current.Lon);
 
@@ -199,7 +241,7 @@ function doThings()
                     var mSize = (index * size)/information.length;
 
                     if(current.DeviceId == null)
-                        markerImage= markerImageNull;
+                        markerImage= nextBusImage;
 
                     var image = {
                         url: markerImage,
