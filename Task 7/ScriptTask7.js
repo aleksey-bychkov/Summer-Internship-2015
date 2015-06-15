@@ -31,11 +31,11 @@ function doThings()
         fromUTC: new Date(),
         markerURL: function markerURL()
         {
-            return this.markers + "?vehicleId=" + this.vehicleId + "&key=" + this.key + "&toUtc=" + (this.toUTC.toJSON()).substr(0,19) + "&fromUtc=" + (this.fromUTC.toJSON()).substr(0,19) + "&format=json";
+            return url.markers + "?vehicleId=" + url.vehicleId + "&key=" + url.key + "&toUtc=" + (url.toUTC.toJSON()).substr(0,19) + "&fromUtc=" + (url.fromUTC.toJSON()).substr(0,19) + "&format=json";
         },
         busListURL: function busListURL()
         {
-            return this.busList + "?orgId=" + this.key + "&serviceDate=" + this.currentDate + "&inServiceOnly=true&activeDevicesOnly=true&format=json";
+            return url.busList + "?orgId=" + url.key + "&serviceDate=" + url.currentDate + "&inServiceOnly=true&activeDevicesOnly=true&format=json";
         }
     };
 
@@ -82,7 +82,6 @@ function doThings()
     //updates the time you want to grab things from
     function updateTime(ptoUTC, pfromUTC)
     {
-
         url.toUTC = ptoUTC;
         url.fromUTC = pfromUTC;
     }
@@ -127,31 +126,28 @@ function doThings()
                 (function addBuses()
                 {
                     var current = data[index];
-                    var busListNode = document.createElement("li");
-                    busListNode.id = current.VehicleType + ":" + current.VehicleId;
 
-                    var bus = document.createTextNode(current.VehicleType+ " " + current.VehicleId);
-                    busListNode.className = "notSelected";
-
-                    busListNode.appendChild(bus);
-
-                    busListNode.onclick = function onClick()
+                    var $busListNode = $("<li>",
                     {
+                        id: current.VehicleId,
+                        class: "notSelected"
+                    });
 
-                        var old = $(document.getElementById(addElementID)).find(".selected");
-                        for(var x=0; x<old.length; x++)
-                        {
-                            old[x].className = "notSelected";
-                        }
+                    $busListNode.append(current.VehicleType+ " " + current.VehicleId);
 
-                        busListNode.className = "selected";
+                    $busListNode.click(function onClick()
+                    {
+                        $("#" + addElementID).find("li.selected").attr("class", "notSelected");
+
+                        $busListNode.attr("class", "selected");
+
 
                         updateVehicleId(current.VehicleId);
-                        updateTime((new Date()), new Date((new Date()).getTime() - (document.getElementById(timeID).value) * 60000));
+                        updateTime((new Date()), new Date((new Date()).getTime() - ($("#" + timeID).val()) * 60000));
                         placeMarkers();
-                    };
+                    });
 
-                    document.getElementById(addElementID).appendChild(busListNode);
+                    $("#" + addElementID).append($busListNode);
                 })();
             }
         }
@@ -206,6 +202,7 @@ function doThings()
                         place(data);
                     else
                     {
+                        $("#" + url.vehicleId).attr("class", "notWorking");
                         alert("Data was empty");
                     }
 
@@ -331,150 +328,5 @@ function doThings()
         }
 
         markers = [];
-    }
-}
-
-
-
-function placeMarkers2(pmap, pvehicleId, ptoUTC, pfromUTC, transitIQImage, nextBusImage)
-{
-
-    var url =
-    {
-        markers: "http://transitiqdatareceiver.cloudapp.net/DataReceiver.svc/GetRawCoords",
-        vehicleId: pvehicleId,
-        key: "DcCi",
-        toUTC: ptoUTC,
-        fromUTC: pfromUTC,
-        toString: function toString()
-        {
-            return this.markers + "?vehicleId=" + this.vehicleId + "&key=" + this.key + "&toUtc=" + (this.toUTC.toJSON()).substr(0,19) + "&fromUtc=" + (this.fromUTC.toJSON()).substr(0,19) + "&format=json";
-        }
-    };
-    
-    $.ajax(
-        {
-            url: url.toString(),
-            jsonp: "callback",
-            dataType: "jsonp",
-            success: function(data)
-            {
-                if(data.length >= 1)
-                    place(data);
-                else
-                {
-                    alert("Data was empty");
-                }
-
-            },
-            error: function ()
-            {
-                alert("Failed to retrieve info!");
-            }
-        });
-
-    //takes in an array of JSON objects and adds makers on a map based off of the array
-    function place(information)
-    {
-        markers = [];
-        pmap.fitBounds(new google.maps.LatLngBounds(null));
-
-        var infoWindow;
-        var size = 30;
-        var bounds = new google.maps.LatLngBounds(null);
-        var latlng;
-
-        for(var index = information.length-1; index >= 0; index--)
-        {
-            (function makeMarkers()
-            {
-                var current = information[index];
-                var markerImage = transitIQImage;
-
-                latlng = new google.maps.LatLng(current.Lat, current.Lon);
-
-                bounds.extend(latlng);
-
-                var mSize = (index * size)/information.length;
-
-                if(current.DeviceId == null)
-                    markerImage= nextBusImage;
-
-                var image = {
-                    url: markerImage,
-                    // This marker is 20 pixels wide by 32 pixels tall.
-                    size: new google.maps.Size(mSize, mSize),
-                    // The origin for this image is 0,0.
-                    origin: new google.maps.Point(mSize/2,mSize/2)
-                };
-
-                //makes the markers
-                var marker = new google.maps.Marker
-                (
-                    {
-                        pmap: pmap,
-                        icon: image,
-                        title: index+"",
-                        position: latlng
-                    }
-                );
-
-                var time = current.ReportDateUtc;
-                time = time.substring(time.indexOf("(")+1, time.indexOf(")"));
-                time = new Date(parseInt(time));
-
-                var content = '<div id="content">' +
-                    '<div id="siteNotice">' +
-                    '</div>' +
-                    '<h1 id="firstHeading" class="firstHeading"></h1>' +
-                    '<div id="bodyContent">' +
-                    '<table>' +
-                    '<tr>' +
-                    '<th>Agency Id</th><td>' + current.AgencyId + '</td>' +
-                    '</tr>' +
-                    '<tr>' +
-                    '<th>Device Id</th><td>' + current.DeviceId + '</td>' +
-                    '</tr>' +
-                    '<tr>' +
-                    '<th>Is Standing</th><td>' + current.IsStanding + '</td>' +
-                    '</tr>' +
-                    '<tr>' +
-                    '<th>Location</th><td>' + latlng.toString() + '</td>' +
-                    '</tr>' +
-                    '<tr>' +
-                    '<th>Vehicle Id</th><td>' + current.VehicleId + '</td>' +
-                    '</tr>' +
-                    '<tr>' +
-                    '<th>Time</th><td>' + time + '</td>' +
-                    '</tr>' +
-                    '</table>' +
-                    '</div>' +
-                    '</div>';
-
-                google.maps.event.addListener(marker, 'click', function makeWindows()
-                {
-                    //closes infoWindow if one exists
-                    if (infoWindow)
-                        infoWindow.close();
-
-                    //makes and opens a new infoWindow for the current marker
-                    infoWindow = new google.maps.InfoWindow
-                    (
-                        {
-                            content: content
-                        }
-                    );
-
-                    //binds the infoWindow to the marker&pmap
-                    infoWindow.open(pmap, marker);
-                });
-
-                //adds the markers
-                markers.push(marker);
-            })();
-        }
-
-        pmap.fitBounds(bounds);
-        show();
     }
 }
