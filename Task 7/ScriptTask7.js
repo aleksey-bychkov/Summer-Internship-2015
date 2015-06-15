@@ -2,13 +2,16 @@ function doThings()
 {
     var publicAPI =
     {
-        update: updateInfo,
-        setMap: setMap,
-        place: place,
-        setNotNullImage: setNotNullImage,
-        setNullImage: setNullImage,
+        placeMarkers: placeMarkers,
         clearMarkers: clearMap,
-        setList: setList
+        addListToElement: addListToElement,
+        updateTime: updateTime,
+        updateDate: updateDate,
+        updateVehicleId: updateVehicleId,
+        setBase: setBase,
+        setMap: setMap,
+        setNullImage: setNullImage,
+        setNotNullImage: setNotNullImage
     };
 
     var map;
@@ -17,28 +20,32 @@ function doThings()
     var markers = [];
     var url =
     {
-        pathway: "http://transitiqdatareceiver.cloudapp.net/DataReceiver.svc/GetRawCoords",
-        vehicleId: "1103",
+        markers: "http://transitiqdatareceiver.cloudapp.net/DataReceiver.svc/GetRawCoords",
+        busList: "http://transitiqapi.cloudapp.net/Service.svc/VehiclesListForServiceDate",
+        vehicleId: "",
         key: "DcCi",
-        toUTC: new Date("2015-06-05T17:00:00"),
-        fromUTC: new Date("2015-06-05T16:50:01"),
-        toString: function toString()
+        currentDate: (new Date()).toJSON().substr(0,10),
+        toUTC: new Date(),
+        fromUTC: new Date(),
+        markerURL: function markerURL()
         {
-            return this.pathway + "?vehicleId=" + this.vehicleId + "&key=" + this.key + "&toUtc=" + (this.toUTC.toJSON()).substr(0,19) + "&fromUtc=" + (this.fromUTC.toJSON()).substr(0,19) + "&format=json";
+            return this.markers + "?vehicleId=" + this.vehicleId + "&key=" + this.key + "&toUtc=" + (this.toUTC.toJSON()).substr(0,19) + "&fromUtc=" + (this.fromUTC.toJSON()).substr(0,19) + "&format=json";
+        },
+        busListURL: function busListURL()
+        {
+            return this.busList + "?orgId=" + this.key + "&serviceDate=" + this.currentDate + "&inServiceOnly=true&activeDevicesOnly=true&format=json";
         }
     };
 
     return publicAPI;
 
     //updates the variables inside.
-    // 1) 6 param takes in a path, vehicleId, key, a start time(Date object) and and end time(A Date object)
-    function updateInfo(ppath, pvehicleId, pkey, ptoUTC, pfromUTC)
+    // 1) 4 param takes in a path, vehicleId, key, a start time(Date object) and and end time(A Date object)
+    function setBase(pmarkers, pkey, pbusList)
     {
-        url.pathway = ppath;
-        url.vehicleId = pvehicleId;
+        url.markers = pmarkers;
         url.key = pkey;
-        url.toUTC = ptoUTC;
-        url.fromUTC = pfromUTC;
+        url.busList = pbusList;
     }
 
     //sets the map the the paramater map
@@ -59,24 +66,104 @@ function doThings()
         markerImageNotNull = pmarkerImage;
     }
 
-    //public method that places markers on the map using the information it has
-    function place()
+    //sets the VehicleId to the paramater
+    function updateVehicleId(pvehicleId)
     {
-        clearMap();
+        url.vehicleId = pvehicleId;
+    }
 
+    //updates the date to the current date
+    function updateDate()
+    {
+        this.currentDate = (new Date()).toJSON().substr(0,10);
+    }
+
+    //updates the time you want to grab things from
+    function updateTime(ptoUTC, pfromUTC)
+    {
+
+        url.toUTC = ptoUTC;
+        url.fromUTC = pfromUTC;
+    }
+
+    //adds the
+    function addListToElement(toAddToElementID, timeElementID)
+    {
         $.ajax(
             {
-                url: url.toString(),
+                url: url.busListURL(),
                 jsonp: "callback",
                 dataType: "jsonp",
                 success: function(data)
                 {
                     if(data.length >= 1)
-                        placeMarkers(data);
+                        this.addAll(toAddToElementID, timeElementID, data);
                     else
                     {
-                        var toRed = $("#bus-list-1").find(".selected");
-                        toRed[0].className = ".notWorking";
+                        alert("No buses");
+                    }
+
+                },
+                error: function ()
+                {
+                    alert("Failed to retrieve info!");
+                }
+            });
+
+
+        function addAll(addElementID, timeID, data)
+        {
+            for(var index = 0; index < data.length; index++)
+            {
+                (function addBuses()
+                {
+                    var current = data[index];
+                    var busListNode = document.createElement("li");
+                    busListNode.id = current.type + ":" + current.vehicleId;
+
+                    var bus = document.createTextNode(current.type+ " " + current.vehicleId);
+                    busListNode.className = "notSelected";
+
+                    busListNode.appendChild(bus);
+
+                    busListNode.onclick = function ()
+                    {
+
+                        var old = $(document.getElementById(addElementID)).find(".selected");
+                        for(var x=0; x<old.length; x++)
+                        {
+                            old[x].className = "notSelected";
+                        }
+
+                        busListNode.className = "selected";
+
+                        this.updateVehicleId(old[0]);
+                        this.updateTime((new Date()), new Date((new Date()).getTime() +(document.getElementById(timeID).value) * 60000));
+                        this.placeMarker();
+                    };
+
+                    document.getElementById(addElementID).appendChild(busListNode);
+                })();
+            }
+        }
+    }
+
+    //public method that places markers on the map using the information it has
+    function placeMarkers()
+    {
+        clearMap();
+
+        $.ajax(
+            {
+                url: url.markerURL(),
+                jsonp: "callback",
+                dataType: "jsonp",
+                success: function(data)
+                {
+                    if(data.length >= 1)
+                        place(data);
+                    else
+                    {
                         alert("Data was empty");
                     }
 
@@ -88,7 +175,7 @@ function doThings()
             });
 
         //takes in an array of JSON objects and adds makers on a map based off of the array
-        function placeMarkers(information)
+        function place(information)
         {
             markers = [];
             map.fitBounds(new google.maps.LatLngBounds(null));
@@ -201,41 +288,5 @@ function doThings()
         }
 
         markers = [];
-    }
-}
-
-function setList(toAddToElement, toAdd)
-{
-    for(var index = 0; index < toAdd.length; index++)
-    {
-        (function addBuses()
-        {
-            var current = buses[index];
-            var busListNode = document.createElement("li");
-            busListNode.id = "Bus" + index;
-
-            var bus = document.createTextNode("" + current);
-            busListNode.className = "notSelected";
-
-            busListNode.appendChild(bus);
-
-            busListNode.onclick = function ()
-            {
-
-                var old = $("#bus-list-1").find(".selected");
-                for(var x=0; x<old.length; x++)
-                {
-                    old[x].className = "notSelected";
-                }
-
-                busListNode.className = "selected";
-
-
-                task7.update(document.getElementById("urlHeader").value, old[0].innerHTML, document.getElementById("key").value, new Date(), new Date((new Date().getTime() - ((document.getElementById("drop-down").value) * 60000))));
-                task7.place();
-            };
-
-            document.getElementById(toAddToElement).appendChild(busListNode);
-        })();
     }
 }

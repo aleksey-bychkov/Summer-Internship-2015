@@ -26,14 +26,11 @@
 
     <br />
 
-    <select id="drop-down">
+    <select id="time">
         <option value="15" id="last15">Last 15 Minutes</option>
         <option value="30" id="last30">Last 30 Minutes</option>
         <option value="60" id="last60">Last Hour</option>
     </select>
-
-    <input type="button" value="Place Markers" id="btnPlaceMarkers" onclick="btnPlaceMarkers()"/>
-    <input type="button" value="Clear Markers" id="btnClearMarkers" onclick="btnClearMarkers()"/>
 </div>
 <div id="map-canvas"></div>
 <div id="bus-numbers">
@@ -54,21 +51,9 @@
         });
 
         task7.setMap(map);
-        task7.place();
-
-        setList("bus-list-1", buses);
+        task7.updateDate();
+        task7.addListToElement("bus-list-1", "time");
     });
-
-    function btnPlaceMarkers()
-    {
-        task7.update(document.getElementById("urlHeader").value, ($("#bus-list-1").find(".selected"))[0].innerHTML, document.getElementById("key").value, new Date(), new Date((new Date().getTime() - ((document.getElementById("drop-down").value) * 60000))));
-        task7.place();
-    }
-
-    function btnClearMarkers()
-    {
-        task7.clearMarkers();
-    }
 </script>
 </body>
 </html>
