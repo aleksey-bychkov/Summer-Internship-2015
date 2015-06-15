@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+    <title>Task 6</title>
+
+    <link rel="stylesheet" href="StyleTask6.css" />
+    <script src="ScriptTask6.js" ></script>
+
+
+</head>
+<body>
+
+    <div>
+        <select id="drop-down" onchange="upDate();">
+            <option value="last15">Last 15 Minutes</option>
+            <option value="last30">Last 30 Minutes</option>
+            <option value="last60">Last Hour</option>
+            <option value="lastDay">Last 24 Hours </option>
+        </select>
+
+        <p id="from-ute">From Ute: </p>
+        <p id="to-ute">To Ute:   </p>
+    </div>
+
+    <script>
+        var calculateTime = new Eastbanc.Internship.Task6(15*60000);
+
+        upDate();
+
+        function upDate()
+        {
+            if(document.getElementById("drop-down").value == "last15")
+            {
+                timePassed = 15*60000;
+            }
+            else if(document.getElementById("drop-down").value == "last30")
+            {
+                timePassed = 30*60000;
+            }
+            else if(document.getElementById("drop-down").value == "last60")
+            {
+                timePassed = 60*60000;
+            }
+            else if(document.getElementById("drop-down").value == "lastDay")
+            {
+                timePassed = 24*60*60000;
+            }
+
+            calculateTime = calculateTime.update(timePassed);
+            document.getElementById("from-ute").innerHTML = "From Ute: " + calculateTime.fromUTE;
+            document.getElementById("to-ute").innerHTML = "To Ute:   " + calculateTime.toUTE;
+        }
+
+    </script>
+
+</body>
+</html>

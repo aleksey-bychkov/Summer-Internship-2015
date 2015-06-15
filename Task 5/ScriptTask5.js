@@ -36,7 +36,7 @@ Eastbanc.Internship.Task5 = function()
        function place(information)
        {
            var markers = [];
-           var window;
+           var infoWindow;
            var size = 25;
 
            for(var index = information.length-1; index >= 0; index--)
@@ -53,7 +53,7 @@ Eastbanc.Internship.Task5 = function()
                        // This marker is 20 pixels wide by 32 pixels tall.
                        size: new google.maps.Size(size, size),
                        // The origin for this image is 0,0.
-                       origin: new google.maps.Point(0,0)
+                       origin: new google.maps.Point(size/2,size/2)
                    };
 
                    //makes the markers
@@ -101,20 +101,20 @@ Eastbanc.Internship.Task5 = function()
 
                    google.maps.event.addListener(marker, 'click', function makeWindows()
                    {
-                       //closes window if one exists
-                       if (window)
-                           window.close();
+                       //closes infoWindow if one exists
+                       if (infoWindow)
+                           infoWindow.close();
 
-                       //makes and opens a new window for the current marker
-                       window = new google.maps.InfoWindow
+                       //makes and opens a new infoWindow for the current marker
+                       infoWindow = new google.maps.InfoWindow
                        (
                            {
                                content: content
                            }
                        );
 
-                       //binds the window to the marker&map
-                       window.open(that.map, marker);
+                       //binds the infoWindow to the marker&map
+                       infoWindow.open(that.map, marker);
                    });
 
                    //adds the markers
