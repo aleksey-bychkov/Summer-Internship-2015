@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task 7/PlaceMarkers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/ScriptTask7.js" afterPath="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/PlaceMarkers.js" afterPath="$PROJECT_DIR$/Task 7/PlaceMarkers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="ScriptTask7.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.823529">
-              <caret line="338" column="0" selection-start-line="338" selection-start-column="0" selection-end-line="479" selection-end-column="1" />
+            <state vertical-scroll-proportion="-39.32353">
+              <caret line="333" column="5" selection-start-line="333" selection-start-column="5" selection-end-line="333" selection-end-column="5" />
               <folding>
                 <element signature="e#46#468#0" expanded="false" />
                 <element signature="e#640#1469#0" expanded="false" />
@@ -65,8 +64,8 @@
       <file leaf-file-name="PlaceMarkers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 7/PlaceMarkers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76869565">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.073913045">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -726,8 +725,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.823529">
-          <caret line="338" column="0" selection-start-line="338" selection-start-column="0" selection-end-line="479" selection-end-column="1" />
+        <state vertical-scroll-proportion="-39.32353">
+          <caret line="333" column="5" selection-start-line="333" selection-start-column="5" selection-end-line="333" selection-end-column="5" />
           <folding>
             <element signature="e#46#468#0" expanded="false" />
             <element signature="e#640#1469#0" expanded="false" />
@@ -751,8 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 7/PlaceMarkers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76869565">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.073913045">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

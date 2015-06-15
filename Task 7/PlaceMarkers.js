@@ -1,5 +1,5 @@
 /*
-    Takes in a Google map along with a vehicleID, a start time, an end time. Along with the nextBusImages and transitIQImage for the markers.
+    Takes in a Google map along with a vehicleID(A string), a start time(a Date Object), an end time(a Date Object). Along with the nextBusImages(Links to image) and transitIQImage(Links to image) for the markers.
     requests a set of files from a server and maps the points on the map
  */
 
@@ -143,6 +143,5 @@ function placeMarkers(pmap, pvehicleId, ptoUTC, pfromUTC, transitIQImage, nextBu
         }
 
         pmap.fitBounds(bounds);
-        show();
     }
 }
