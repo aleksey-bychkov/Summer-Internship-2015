@@ -26,8 +26,8 @@
       <file leaf-file-name="Task7.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.5">
-              <caret line="64" column="22" selection-start-line="63" selection-start-column="7" selection-end-line="64" selection-end-column="22" />
+            <state vertical-scroll-proportion="-18.923077">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -36,14 +36,25 @@
       <file leaf-file-name="ScriptTask7.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7027972">
-              <caret line="197" column="47" selection-start-line="197" selection-start-column="47" selection-end-line="197" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.68">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
-                <element signature="n#!!block;n#updateInfo#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="e#640#1469#0" expanded="false" />
+                <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="n#!!block;n#setNullImage#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="n#!!block;n#setNotNullImage#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="n#!!block;n#setList#0" expanded="false" />
+                <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#showWhat#0;n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="e#6977#10403#0" expanded="false" />
+                <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -53,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/Task 7/StyleTask7.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="11" />
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,10 +130,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
+    <option name="x" value="-2409" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="width" value="2418" />
+    <option name="height" value="1308" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -369,10 +380,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-2409" y="-9" width="2418" height="1308" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21822916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17458333" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -405,7 +416,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -423,11 +434,22 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#updateInfo#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="e#640#1469#0" expanded="false" />
+            <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setNullImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setNotNullImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setList#0" expanded="false" />
+            <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#showWhat#0;n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="e#6977#10403#0" expanded="false" />
+            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -451,6 +473,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#650#756#0" expanded="false" />
+            <element signature="e#823#913#0" expanded="false" />
+            <element signature="e#1810#1850#0" expanded="false" />
+            <element signature="e#1921#1962#0" expanded="false" />
+            <element signature="e#2040#2114#0" expanded="false" />
+            <element signature="e#2188#2263#0" expanded="false" />
+            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
+            <element signature="n#!!block;n#calc#0" expanded="false" />
+            <element signature="e#3053#3502#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -465,6 +498,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -479,6 +513,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#650#756#0" expanded="false" />
+            <element signature="e#823#913#0" expanded="false" />
+            <element signature="e#1810#1850#0" expanded="false" />
+            <element signature="e#1921#1962#0" expanded="false" />
+            <element signature="e#2040#2114#0" expanded="false" />
+            <element signature="e#2188#2263#0" expanded="false" />
+            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
+            <element signature="n#!!block;n#calc#0" expanded="false" />
+            <element signature="e#3053#3502#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -493,6 +538,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -535,17 +581,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 6/ScriptTask6.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 2/ScriptTask2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42869565">
           <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -574,6 +614,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.79826087">
           <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+          <folding>
+            <element signature="e#650#756#0" expanded="false" />
+            <element signature="e#823#913#0" expanded="false" />
+            <element signature="e#1810#1850#0" expanded="false" />
+            <element signature="e#1921#1962#0" expanded="false" />
+            <element signature="e#2040#2114#0" expanded="false" />
+            <element signature="e#2188#2263#0" expanded="false" />
+            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
+            <element signature="n#!!block;n#calc#0" expanded="false" />
+            <element signature="e#3053#3502#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -592,17 +643,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 6/Task6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 5/Task5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21593533">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="96" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -622,14 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.5">
-          <caret line="64" column="22" selection-start-line="63" selection-start-column="7" selection-end-line="64" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 4/ScriptTask4.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -643,21 +680,56 @@
     <entry file="file://$PROJECT_DIR$/Task 7/StyleTask7.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="11" />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 6/ScriptTask6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22869955">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 6/Task6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.038106237">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.923077">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7027972">
-          <caret line="197" column="47" selection-start-line="197" selection-start-column="47" selection-end-line="197" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.68">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#updateInfo#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="e#640#1469#0" expanded="false" />
+            <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setNullImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setNotNullImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setList#0" expanded="false" />
+            <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#showWhat#0;n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="e#6977#10403#0" expanded="false" />
+            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
         </state>
       </provider>
