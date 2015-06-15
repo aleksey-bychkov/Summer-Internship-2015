@@ -74,7 +74,12 @@ function doThings()
                     if(data.length >= 1)
                         placeMarkers(data);
                     else
+                    {
+                        var toRed = $("#bus-list-1").find(".selected");
+                        toRed[0].className = ".notWorking";
                         alert("Data was empty");
+                    }
+
                 },
                 error: function ()
                 {
@@ -86,17 +91,21 @@ function doThings()
         function placeMarkers(information)
         {
             markers = [];
+            map.fitBounds(new google.maps.LatLngBounds(null));
+
             var infoWindow;
             var size = 30;
-            var bounds = map.getBounds();
+            var bounds = new google.maps.LatLngBounds(null);
+            var latlng;
 
             for(var index = information.length-1; index >= 0; index--)
             {
                 (function makeMarkers()
                 {
                     var current = information[index];
-                    var latlng = new google.maps.LatLng(current.Lat, current.Lon);
-                    var markerImage= markerImageNotNull;
+                    var markerImage = markerImageNotNull;
+
+                    latlng = new google.maps.LatLng(current.Lat, current.Lon);
 
                     bounds.extend(latlng);
 
@@ -126,7 +135,7 @@ function doThings()
 
                     var time = current.ReportDateUtc;
                     time = time.substring(time.indexOf("(")+1, time.indexOf(")"));
-                    time = parseInt(time);
+                    time = new Date(parseInt(time));
 
                     var content = '<div id="content">' +
                         '<div id="siteNotice">' +
@@ -171,7 +180,7 @@ function doThings()
                         );
 
                         //binds the infoWindow to the marker&map
-                        infoWindow.open(that.map, marker);
+                        infoWindow.open(map, marker);
                     });
 
                     //adds the markers
@@ -186,12 +195,9 @@ function doThings()
     //clears the map of all markers
     function clearMap()
     {
-        if(markers.length > 0)
+        for(var i = 0; i < markers.length; i++)
         {
-            for (var i = 0; i < markers.length; i++)
-            {
-                markers[i].setMap(null);
-            }
+            markers[i].setMap(null);
         }
 
         markers = [];
@@ -223,6 +229,10 @@ function setList(toAddToElement, toAdd)
                 }
 
                 busListNode.className = "selected";
+
+
+                task7.update(document.getElementById("urlHeader").value, old[0].innerHTML, document.getElementById("key").value, new Date(), new Date((new Date().getTime() - ((document.getElementById("drop-down").value) * 60000))));
+                task7.place();
             };
 
             document.getElementById(toAddToElement).appendChild(busListNode);
