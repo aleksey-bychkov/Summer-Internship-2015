@@ -97,7 +97,7 @@ function doThings()
                 success: function(data)
                 {
                     if(data.length >= 1)
-                        this.addAll(toAddToElementID, timeElementID, data);
+                        addAll(toAddToElementID, timeElementID, data);
                     else
                     {
                         alert("No buses");
@@ -119,14 +119,14 @@ function doThings()
                 {
                     var current = data[index];
                     var busListNode = document.createElement("li");
-                    busListNode.id = current.type + ":" + current.vehicleId;
+                    busListNode.id = current.VehicleType + ":" + current.VehicleId;
 
-                    var bus = document.createTextNode(current.type+ " " + current.vehicleId);
+                    var bus = document.createTextNode(current.VehicleType+ " " + current.VehicleId);
                     busListNode.className = "notSelected";
 
                     busListNode.appendChild(bus);
 
-                    busListNode.onclick = function ()
+                    busListNode.onclick = function onClick()
                     {
 
                         var old = $(document.getElementById(addElementID)).find(".selected");
@@ -137,9 +137,9 @@ function doThings()
 
                         busListNode.className = "selected";
 
-                        this.updateVehicleId(old[0]);
-                        this.updateTime((new Date()), new Date((new Date()).getTime() +(document.getElementById(timeID).value) * 60000));
-                        this.placeMarker();
+                        updateVehicleId(current.VehicleId);
+                        updateTime((new Date()), new Date((new Date()).getTime() +(document.getElementById(timeID).value) * 60000));
+                        placeMarkers();
                     };
 
                     document.getElementById(addElementID).appendChild(busListNode);

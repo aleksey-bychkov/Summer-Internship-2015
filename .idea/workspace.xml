@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/ScriptTask7.js" afterPath="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/StyleTask7.css" afterPath="$PROJECT_DIR$/Task 7/StyleTask7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/Task7.html" afterPath="$PROJECT_DIR$/Task 7/Task7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Task7.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Task7.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.423077">
-              <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.78406465">
+              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask7.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScriptTask7.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27690583">
-              <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
@@ -49,9 +46,9 @@
                 <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#place#0;n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -377,7 +374,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21822916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -413,7 +410,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -438,9 +435,9 @@
             <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#place#0;n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -690,18 +687,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.423077">
-          <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27690583">
-          <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
@@ -710,10 +699,18 @@
             <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#place#0;n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78406465">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
