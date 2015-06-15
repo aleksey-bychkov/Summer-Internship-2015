@@ -87,13 +87,15 @@ function doThings()
         url.fromUTC = pfromUTC;
     }
 
+    //when calles changes ShowingOnlyNextBus calls shows and returns the new ShowingOnlyNextBus value
     function updateShowingOnlyNextBus()
     {
         showingOnlyNextBus = !showingOnlyNextBus;
         show();
+        return showingOnlyNextBus;
     }
 
-    //adds the
+    //adds a list of all the active buses to the toAddToElementID
     function addListToElement(toAddToElementID, timeElementID)
     {
         $.ajax(
@@ -155,7 +157,7 @@ function doThings()
         }
     }
 
-    //if param is false shows null if true shows all
+    //if showingOnlyNextBus is true then only shows showingOnlyNextBus
     function show()
     {
         if(showingOnlyNextBus)
@@ -167,7 +169,7 @@ function doThings()
             showWhat();
         }
 
-        //if what is 
+        //if image is undefined shows all images. Otherwise only shows the paramater
         function showWhat(image)
         {
             for(var index = 0; index < markers.length; index++)
