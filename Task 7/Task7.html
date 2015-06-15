@@ -25,7 +25,7 @@
 
         <br />
 
-        <select id="time">
+        <select id="time" onchange="onChange()">
             <option value="15" id="last15">Last 15 Minutes</option>
             <option value="30" id="last30">Last 30 Minutes</option>
             <option value="60" id="last60">Last Hour</option>
@@ -55,6 +55,12 @@
         task7.updateDate();
         task7.addListToElement("bus-list-1", "time");
     });
+
+    function onChange()
+    {
+        task7.updateTime((new Date()), new Date((new Date()).getTime() - (document.getElementById("time").value) * 60000));
+        task7.placeMarkers();
+    }
 </script>
 </body>
 </html>

@@ -174,14 +174,14 @@ function doThings()
             {
                 var current = markers[index];
 
-                if(image !== undefined)
+                if(image == undefined)
                     current.setMap(map);
                 else
                 {
-                    if(current.icon.url != image)
-                        current.setMap(null);
-                    else
+                    if(current.icon.url === image)
                         current.setMap(map);
+                    else
+                        current.setMap(null);
                 }
 
             }
@@ -213,8 +213,6 @@ function doThings()
                     alert("Failed to retrieve info!");
                 }
             });
-
-        show();
 
         //takes in an array of JSON objects and adds makers on a map based off of the array
         function place(information)
@@ -318,6 +316,7 @@ function doThings()
             }
 
             map.fitBounds(bounds);
+            show();
         }
     }
 
