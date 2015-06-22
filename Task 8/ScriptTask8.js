@@ -210,21 +210,17 @@ function doThings()
         var currentInterval = 0;
 
         url.fromUTC = startDate;
-        url.toUTC = new Date(startDate.getTime() + (15 * 60 * 1000));
+        url.toUTC = new Date(startDate.getTime() + (interval));
 
 
         place(interval, 25);
 
-        currentInterval++;
-
+        show();
 
         function place(interval, startSize)
         {
             if(url.toUTC.toString() != endDate.toString())
             {
-                url.fromUTC = url.toUTC;
-                url.toUTC = new Date(url.fromUTC.getTime() + interval);
-
                 $.ajax(
                     {
                         url: url.markerURL(),
@@ -237,6 +233,9 @@ function doThings()
                             map.fitBounds(new google.maps.LatLngBounds(null));
                             map.fitBounds(bounds);
                             currentInterval++;
+                            
+                            url.fromUTC = url.toUTC;
+                            url.toUTC = new Date(url.fromUTC.getTime() + interval);
 
                             place(interval);
                         },
@@ -341,8 +340,6 @@ function doThings()
                         markers.push(marker);
                     })();
                 }
-
-                show();
             }
         }
 
