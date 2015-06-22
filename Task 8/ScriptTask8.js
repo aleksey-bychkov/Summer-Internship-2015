@@ -202,7 +202,7 @@ function doThings()
         clearMap();
         markers = [];
         url.vehicleId = buses[0];
-        var endDate = new Date("Mon Jun 22 2015 15:08:39 GMT-0400 (Eastern Daylight Time)");
+        var endDate = new Date("Mon Jun 22 2015 15:00:00 GMT-0400 (Eastern Daylight Time)");
         var startDate = new Date(endDate.getTime() - (5 * 60 * 60 * 1000));
         var bounds = new google.maps.LatLngBounds(null);
         var interval = 15 * 60 * 1000;
@@ -233,7 +233,7 @@ function doThings()
                             map.fitBounds(new google.maps.LatLngBounds(null));
                             map.fitBounds(bounds);
                             currentInterval++;
-                            
+
                             url.fromUTC = url.toUTC;
                             url.toUTC = new Date(url.fromUTC.getTime() + interval);
 
