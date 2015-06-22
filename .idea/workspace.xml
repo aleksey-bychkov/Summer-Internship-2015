@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 8/ScriptTask8.js" afterPath="$PROJECT_DIR$/Task 8/ScriptTask8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="ScriptTask8.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 8/ScriptTask8.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0460869">
-              <caret line="361" column="36" selection-start-line="361" selection-start-column="36" selection-end-line="361" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.32">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
@@ -49,7 +50,9 @@
                 <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="n#!!block;n#doMarkers#0;n#!!block;n#place#0;n#!!block;n#placeAll#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#placeAll#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#place#0;n#!!block;n#placeAll#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -394,9 +397,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2409" y="-9" width="2418" height="1308" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17458333" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17458333" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -429,7 +432,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -775,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 8/ScriptTask8.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0460869">
-          <caret line="361" column="36" selection-start-line="361" selection-start-column="36" selection-end-line="361" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.32">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
@@ -788,7 +791,9 @@
             <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#doMarkers#0;n#!!block;n#place#0;n#!!block;n#placeAll#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#placeAll#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#place#0;n#!!block;n#placeAll#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
         </state>
       </provider>

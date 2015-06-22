@@ -201,25 +201,31 @@ function doThings()
     {
         clearMap();
         markers = [];
-        url.vehicleId = buses[0];
         var endDate = new Date("Mon Jun 22 2015 15:00:00 GMT-0400 (Eastern Daylight Time)");
-        var startDate = new Date(endDate.getTime() - (1 * 60 * 60 * 1000));
+        var startDate = new Date(endDate.getTime() - (3 * 60 * 60 * 1000));
         var bounds = new google.maps.LatLngBounds(null);
         var interval = 15 * 60 * 1000;
-        var numIntervals = (startDate.getTime() - endDate.getTime())/interval;
+        var numIntervals = (endDate.getTime() - startDate.getTime())/interval;
         var currentInterval = 1;
 
         url.fromUTC = startDate;
         url.toUTC = new Date(startDate.getTime() + (interval));
 
-
-        place(interval, 30);
+        for(var x = 0; x < buses.length; x++)
+        {
+            (function()
+            {
+                currentInterval = 1;
+                url.vehicleId = buses[x];
+                place(interval);
+            })();
+        }
 
         show();
 
-        function place(interval, startSize)
+        function place(interval)
         {
-            if(url.toUTC.toString() != endDate.toString())
+            if(url.toUTC.getTime() <= endDate.getTime())
             {
                 $.ajax(
                     {
@@ -228,7 +234,7 @@ function doThings()
                         dataType: "jsonp",
                         success: function(info)
                         {
-                            doMarkers(info, (startSize * currentInterval)/numIntervals);
+                            doMarkers(info, (25 * currentInterval)/numIntervals);
 
                             map.fitBounds(new google.maps.LatLngBounds(null));
                             map.fitBounds(bounds);
@@ -252,7 +258,7 @@ function doThings()
                 var infoWindow;
                 var latlng;
 
-                for(var index = information.length-1; index >= 0; index--)
+                for(var index = 0; index < information.length; index++)
                 {
                     (function makeMarkers()
                     {
@@ -263,7 +269,7 @@ function doThings()
 
                         bounds.extend(latlng);
 
-                        var mSize = (index * size)/information.length + 10;
+                        var mSize = ((index * size)/information.length) + 10;
 
                         if(current.DeviceId == null)
                             markerImage= nextBusImage;
@@ -280,7 +286,7 @@ function doThings()
                             {
                                 map: map,
                                 icon: image,
-                                title: index+"",
+                                title: markers.length+"",
                                 position: latlng
                             }
                         );
@@ -395,7 +401,7 @@ function doThings()
 
                     bounds.extend(latlng);
 
-                    var mSize = (index * size)/information.length + 15;
+                    var mSize = (index * size)/information.length + 10;
 
                     if(current.DeviceId == null)
                         markerImage= nextBusImage;
@@ -412,7 +418,7 @@ function doThings()
                         {
                             map: map,
                             icon: image,
-                            title: markers.length+"",
+                            title: index+"",
                             position: latlng
                         }
                     );
