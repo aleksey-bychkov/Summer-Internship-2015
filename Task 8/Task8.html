@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+    <title>Task 8</title>
+
+    <link rel="stylesheet" href="StyleTask8.css" />
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8Wr9qFMBNi9VCBCkonOo8qxODaR13QoA"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="ScriptTask8.js" ></script>
+
+
+</head>
+<body>
+<div id="map-canvas"></div>
+<div id="bus-numbers">
+    <select id="time" onchange="onChange()">
+        <option value="15" id="last15">Last 15 Minutes</option>
+        <option value="30" id="last30">Last 30 Minutes</option>
+        <option value="60" id="last60">Last Hour</option>
+    </select>
+    <br />
+    <input type="button" id="loadInfo" onclick="load()" value="Place All">
+    <br />
+    <label><input type="checkbox" id="nextBusOnly" onclick="task8.updateShowingOnlyNextBus()"> Display NextBus only</label>
+    <p><strong>Vehicle ID</strong></p>
+    <ul id="bus-list-1">
+    </ul>
+</div>
+<script>
+    var task8 = doThings();
+
+    google.maps.event.addDomListener(window, 'load', function load()
+    {
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+                {
+                    center: new google.maps.LatLng(38.9055751, -77.0611825),
+                    zoom: 15
+                });
+
+        task8.setMap(map);
+        task8.updateDate();
+        task8.addListToElement("bus-list-1", "time");
+    });
+
+    function onChange()
+    {
+        task8.updateTime((new Date()), new Date((new Date()).getTime() - ($("#time").val()) * 60000));
+        task8.placeMarkers();
+    }
+
+    function load()
+    {
+        task8.placeAll();
+    }
+
+</script>
+</body>
+</html>

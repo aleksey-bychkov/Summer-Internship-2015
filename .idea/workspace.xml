@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task 8/nextBus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task 8/transitIQ.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/ScriptTask7.js" afterPath="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/StyleTask7.css" afterPath="$PROJECT_DIR$/Task 7/StyleTask7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 7/Task7.html" afterPath="$PROJECT_DIR$/Task 7/Task7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,24 +26,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Task7.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
+      <file leaf-file-name="Task8.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Task 8/Task8.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.615385">
-              <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.52935946">
+              <caret line="35" column="68" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask7.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
+      <file leaf-file-name="ScriptTask8.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 8/ScriptTask8.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="195" column="37" selection-start-line="195" selection-start-column="37" selection-end-line="195" selection-end-column="37" />
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
-                <element signature="e#46#468#0" expanded="false" />
-                <element signature="e#640#1461#0" expanded="false" />
                 <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
@@ -51,19 +50,18 @@
                 <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="e#6754#10180#0" expanded="false" />
-                <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StyleTask7.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Task 7/StyleTask7.css">
+      <file leaf-file-name="StyleTask8.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 8/StyleTask8.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29565218">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,8 +115,10 @@
         <option value="$PROJECT_DIR$/Task 5/ScriptTask5.js" />
         <option value="$PROJECT_DIR$/Task 7/PlaceMarkers.js" />
         <option value="$PROJECT_DIR$/Task 7/Task7.html" />
-        <option value="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
         <option value="$PROJECT_DIR$/Task 7/StyleTask7.css" />
+        <option value="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
+        <option value="$PROJECT_DIR$/Task 8/ScriptTask8.js" />
+        <option value="$PROJECT_DIR$/Task 8/Task8.html" />
       </list>
     </option>
   </component>
@@ -164,6 +164,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="untitled" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summer-Internship-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task 8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -284,6 +298,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 8" />
       <recent name="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 7" />
       <recent name="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015" />
     </key>
@@ -295,10 +310,7 @@
       <recent name="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Task7.html">
-    <configuration default="false" name="Task4.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/Task 4/Task4.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.Task8.html">
     <configuration default="false" name="Task5.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/Task 5/Task5.html">
       <method />
     </configuration>
@@ -309,6 +321,9 @@
       <method />
     </configuration>
     <configuration default="false" name="Task1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/Task 1/Task1.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="Task8.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/Task 8/Task8.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -350,19 +365,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task4.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task5.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task6.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task7.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Task1.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task5.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task6.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task7.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task1.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Task8.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task7.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task1.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task6.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task5.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Task4.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task8.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task7.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task1.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task6.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Task5.html" />
       </list>
     </recent_temporary>
   </component>
@@ -416,7 +431,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -435,7 +450,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#46#468#0" expanded="false" />
-            <element signature="e#640#1461#0" expanded="false" />
+            <element signature="e#660#1481#0" expanded="false" />
             <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
@@ -444,8 +459,8 @@
             <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="e#6754#10180#0" expanded="false" />
             <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
         </state>
@@ -708,8 +723,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.615385">
-          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.32740214">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 7/StyleTask7.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29565218">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -717,10 +740,10 @@
     <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="195" column="37" selection-start-line="195" selection-start-column="37" selection-end-line="195" selection-end-column="37" />
+          <caret line="318" column="12" selection-start-line="318" selection-start-column="12" selection-end-line="318" selection-end-column="34" />
           <folding>
             <element signature="e#46#468#0" expanded="false" />
-            <element signature="e#640#1461#0" expanded="false" />
+            <element signature="e#660#1481#0" expanded="false" />
             <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
@@ -729,17 +752,44 @@
             <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="e#6754#10180#0" expanded="false" />
             <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/StyleTask7.css">
+    <entry file="file://$PROJECT_DIR$/Task 8/StyleTask8.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29565218">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 8/ScriptTask8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 8/Task8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52935946">
+          <caret line="35" column="68" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
           <folding />
         </state>
       </provider>

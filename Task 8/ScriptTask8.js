@@ -12,7 +12,9 @@ function doThings()
         setBase: setBase,
         setMap: setMap,
         setNextBusImage: setNextBusImage,
-        setTransitIQImage: setTransitIQImage
+        setTransitIQImage: setTransitIQImage,
+        placeAll: placeAll,
+        returnMarkers: returnMarkers
     };
 
     var map;
@@ -187,6 +189,164 @@ function doThings()
 
             }
         }
+    }
+
+    function returnMarkers()
+    {
+        return markers;
+    }
+
+    //places all the markers for all the buses for the past time where time is the number of hours
+    function placeAll()
+    {
+        clearMap();
+        markers = [];
+        url.vehicleId = buses[0];
+        var endDate = new Date("Mon Jun 22 2015 15:08:39 GMT-0400 (Eastern Daylight Time)");
+        var startDate = new Date(endDate.getTime() - (5 * 60 * 60 * 1000));
+        var bounds = new google.maps.LatLngBounds(null);
+        var interval = 15 * 60 * 1000;
+        var numIntervals = (startDate.getTime() - endDate.getTime())/interval;
+        var currentInterval = 0;
+
+        url.fromUTC = startDate;
+        url.toUTC = new Date(startDate.getTime() + (15 * 60 * 1000));
+
+
+        place(interval, 25);
+
+        currentInterval++;
+
+
+        function place(interval, startSize)
+        {
+            if(url.toUTC.toString() != endDate.toString())
+            {
+                url.fromUTC = url.toUTC;
+                url.toUTC = new Date(url.fromUTC.getTime() + interval);
+
+                $.ajax(
+                    {
+                        url: url.markerURL(),
+                        jsonp: "callback",
+                        dataType: "jsonp",
+                        success: function(info)
+                        {
+                            doMarkers(info, (startSize * currentInterval)/numIntervals);
+
+                            map.fitBounds(new google.maps.LatLngBounds(null));
+                            map.fitBounds(bounds);
+                            currentInterval++;
+
+                            place(interval);
+                        },
+                        error: function ()
+                        {
+                            alert("Failed to retrieve info!");
+                        }
+                    });
+            }
+
+            function doMarkers(information, size)
+            {
+
+                var infoWindow;
+                var latlng;
+
+                for(var index = information.length-1; index >= 0; index--)
+                {
+                    (function makeMarkers()
+                    {
+                        var current = information[index];
+                        var markerImage = transitIQImage;
+
+                        latlng = new google.maps.LatLng(current.Lat, current.Lon);
+
+                        bounds.extend(latlng);
+
+                        var mSize = (index * size)/information.length + 10;
+
+                        if(current.DeviceId == null)
+                            markerImage= nextBusImage;
+
+                        var image = {
+                            url: markerImage,
+                            size: new google.maps.Size(mSize, mSize),
+                            origin: new google.maps.Point(mSize/2,mSize/2)
+                        };
+
+                        //makes the markers
+                        var marker = new google.maps.Marker
+                        (
+                            {
+                                map: map,
+                                icon: image,
+                                title: index+"",
+                                position: latlng
+                            }
+                        );
+
+                        //makes the info window
+                        var time = current.ReportDateUtc;
+                        time = time.substring(time.indexOf("(")+1, time.indexOf(")"));
+                        time = new Date(parseInt(time));
+
+                        var content = '<div id="content">' +
+                            '<div id="siteNotice">' +
+                            '</div>' +
+                            '<h1 id="firstHeading" class="firstHeading"></h1>' +
+                            '<div id="bodyContent">' +
+                            '<table>' +
+                            '<tr>' +
+                            '<th>Agency Id</th><td>' + current.AgencyId + '</td>' +
+                            '</tr>' +
+                            '<tr>' +
+                            '<th>Device Id</th><td>' + current.DeviceId + '</td>' +
+                            '</tr>' +
+                            '<tr>' +
+                            '<th>Is Standing</th><td>' + current.IsStanding + '</td>' +
+                            '</tr>' +
+                            '<tr>' +
+                            '<th>Location</th><td>' + latlng.toString() + '</td>' +
+                            '</tr>' +
+                            '<tr>' +
+                            '<th>Vehicle Id</th><td>' + current.VehicleId + '</td>' +
+                            '</tr>' +
+                            '<tr>' +
+                            '<th>Time</th><td>' + time + '</td>' +
+                            '</tr>' +
+                            '</table>' +
+                            '</div>' +
+                            '</div>';
+
+                        google.maps.event.addListener(marker, 'click', function makeWindows()
+                        {
+                            //closes infoWindow if one exists
+                            if (infoWindow)
+                                infoWindow.close();
+
+                            //makes and opens a new infoWindow for the current marker
+                            infoWindow = new google.maps.InfoWindow
+                            (
+                                {
+                                    content: content
+                                }
+                            );
+
+                            //binds the infoWindow to the marker&map
+                            infoWindow.open(map, marker);
+                        });
+
+                        //adds the markers
+                        markers.push(marker);
+                    })();
+                }
+
+                show();
+            }
+        }
+
+
     }
 
     //public method that places markers on the map using the information it has
