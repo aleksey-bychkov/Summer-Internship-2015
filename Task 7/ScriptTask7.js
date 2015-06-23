@@ -128,7 +128,7 @@ function doThings()
                 {
                     var current = data[index];
 
-                    buses.push(current.VehicleId);
+                    bus
 
                     var $busListNode = $("<li>",
                     {
@@ -223,7 +223,7 @@ function doThings()
             map.fitBounds(new google.maps.LatLngBounds(null));
 
             var infoWindow;
-            var size = 23;
+            var size = 30;
             var bounds = new google.maps.LatLngBounds(null);
             var latlng;
 
@@ -238,7 +238,7 @@ function doThings()
 
                     bounds.extend(latlng);
 
-                    var mSize = (index * size)/information.length + 7;
+                    var mSize = (index * size)/information.length;
 
                     if(current.DeviceId == null)
                         markerImage= nextBusImage;
