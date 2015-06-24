@@ -301,3 +301,17 @@ function placeMarkers()
 }
 
 
+function asdfas()
+{
+    var $busListNode = $("<li>",
+        {
+            id: current.VehicleId
+        });
+
+    $busListNode.append(current.VehicleType+ " " + current.VehicleId);
+
+
+    buses.push(toAdd);
+
+    $("#" + addElementID).append($busListNode);
+}

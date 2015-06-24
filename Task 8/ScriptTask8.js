@@ -124,7 +124,6 @@ function doThings()
         }
     }
 
-
     //adds a list of all the active buses to the toAddToElementID
     function addListToElement(toAddToElementID)
     {
@@ -152,7 +151,6 @@ function doThings()
 
         function addAll(addElementID, data)
         {
-            var startBounds = map.getBounds();
 
             for(var index = 0; index < data.length; index++)
             {
@@ -169,8 +167,7 @@ function doThings()
 
                     var $busListNode = $("<li>",
                     {
-                        id: current.VehicleId,
-                        class: "notSelected"
+                        id: current.VehicleId
                     });
 
                     var $checkbox= $(document.createElement('input')).attr(
@@ -185,20 +182,21 @@ function doThings()
 
                     url.vehicleId = current.VehicleId;
 
-                    var end = new Date("Mon Jun 22 2015 15:00:00 GMT-0400 (Eastern Daylight Time)");
-                    var start = new Date(end.getTime() - (60 * 60 * 1000));
+                    var end = new Date();
+                    var start = new Date(end.getTime() - (2 * 60 * 60 * 1000));
                     var temp = placeLotsOfMarkers(start, end, 900000, current.VehicleId);
 
                     toAdd.markers = temp.markers;
                     toAdd.bounds = temp.bounds;
                     toAdd.checked = $checkbox.is(":checked");
 
-                    $busListNode.click(function onClick() {
+                    $busListNode.click(function onClick()
+                    {
                         toAdd.checked = $checkbox.is(":checked");
 
-                        for (var index = 0; index < toAdd.markers.length; index++) {
+                        for (var markerIndex = 0; markerIndex < toAdd.markers.length; markerIndex++) {
                             (function () {
-                                var current = toAdd.markers[index];
+                                var current = toAdd.markers[markerIndex];
                                 if (showingOnlyNextBus) {
                                     if (current.icon.url === transitIQImage)
                                         current.setVisible(false);
@@ -225,7 +223,10 @@ function doThings()
                         if(!bounds.equals(new google.maps.LatLngBounds()))
                             map.fitBounds(bounds);
                         else
-                            map.fitBounds(startBounds)
+                        {
+                            map.panTo(new google.maps.LatLng(38.8977, -77.0366));
+                            map.setZoom(15);
+                        }
                     });
 
                     buses.push(toAdd);
@@ -237,9 +238,27 @@ function doThings()
         }
     }
 
-    function gatherInfo()
+    function gatherInfo(appendToID)
     {
+        var nextBusPings = [];
 
+        for(var index = 0; index < buses.length; index++)
+        {
+            var current = buses[index];
+            for(var x=0; x < current.markers.length; x++)
+            {
+
+            }
+            (function()
+            {
+                var current = allMarkers[index];
+
+                if(current.icon.url === nextBusImage)
+                {
+                    nextBusPings.push(current);
+                }
+            }());
+        }
     }
 
     function placeLotsOfMarkers(pStartDate, pEndDate, pInterval, pVehicleId)
@@ -276,12 +295,26 @@ function doThings()
                         dataType: "jsonp",
                         success: function (info)
                         {
-                            placeInformation(info, (25 * currentInterval) / numIntervals);
 
-                            currentInterval++;
+                            (function()
+                            {
+                                var $OutPut = $("<li>",
+                                    {
+                                        id: url.fromUTC + "-" + url.toUTC
+                                    });
+
+                                var output = url.vehicleId + " is loaded from " + url.fromUTC.toJSON() + " to " + url.toUTC.toJSON();
+
+                                $OutPut.append(output);
+
+                                $("#loadingList").append($OutPut);
+                            }());
+
+                            placeInformation(info, (25 * currentInterval) / numIntervals);
 
                             url.fromUTC = url.toUTC;
                             url.toUTC = new Date(url.fromUTC.getTime() + pinterval);
+                            currentInterval++;
 
                             placeIncrement(pinterval);
                         },

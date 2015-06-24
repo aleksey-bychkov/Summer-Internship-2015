@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task 8/PlaceMarkers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 8/ScriptTask8.js" afterPath="$PROJECT_DIR$/Task 8/ScriptTask8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 8/StyleTask8.css" afterPath="$PROJECT_DIR$/Task 8/StyleTask8.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 8/Task8.html" afterPath="$PROJECT_DIR$/Task 8/Task8.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 8/test.js" afterPath="$PROJECT_DIR$/Task 8/test.js" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="Task8.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 8/Task8.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="86" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="86" />
+            <state vertical-scroll-proportion="-20.923077">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,9 +39,10 @@
       <file leaf-file-name="ScriptTask8.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 8/ScriptTask8.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7930435">
-              <caret line="328" column="41" selection-start-line="328" selection-start-column="41" selection-end-line="328" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.42347828">
+              <caret line="286" column="42" selection-start-line="286" selection-start-column="42" selection-end-line="286" selection-end-column="42" />
               <folding>
+                <element signature="e#627#1485#0" expanded="false" />
                 <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
@@ -50,12 +51,20 @@
                 <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
                 <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-                <element signature="e#6127#7664#0" expanded="false" />
-                <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="n#!!block;n#gatherInfo#0;n#!!block;n#doThings#0" expanded="false" />
+                <element signature="e#8150#8353#0" expanded="false" />
+                <element signature="n#!!block;n#placeInformation#0;n#!!block;n#placeIncrement#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#doThings#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StyleTask8.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 8/StyleTask8.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/Task 8/test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+              <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="313" selection-end-column="22" />
               <folding>
                 <element signature="n#!!doc;n#placeAll#0" expanded="false" />
                 <element signature="n#!!block;n#placeAll#0" expanded="false" />
@@ -141,9 +150,10 @@
         <option value="$PROJECT_DIR$/Task 1/ScriptTask1.js" />
         <option value="$PROJECT_DIR$/Task 7/ScriptTask7.js" />
         <option value="$PROJECT_DIR$/Task 8/test.txt" />
+        <option value="$PROJECT_DIR$/Task 8/PlaceMarkers.js" />
         <option value="$PROJECT_DIR$/Task 8/test.js" />
         <option value="$PROJECT_DIR$/Task 8/Task8.html" />
-        <option value="$PROJECT_DIR$/Task 8/PlaceMarkers.js" />
+        <option value="$PROJECT_DIR$/Task 8/StyleTask8.css" />
         <option value="$PROJECT_DIR$/Task 8/ScriptTask8.js" />
       </list>
     </option>
@@ -475,6 +485,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#627#1485#0" expanded="false" />
             <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
@@ -483,11 +494,9 @@
             <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="e#6127#7664#0" expanded="false" />
-            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#gatherInfo#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="e#8150#8353#0" expanded="false" />
+            <element signature="n#!!block;n#placeInformation#0;n#!!block;n#placeIncrement#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -513,6 +522,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#627#1485#0" expanded="false" />
             <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
@@ -521,11 +531,9 @@
             <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="e#6127#7664#0" expanded="false" />
-            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#gatherInfo#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="e#8150#8353#0" expanded="false" />
+            <element signature="n#!!block;n#placeInformation#0;n#!!block;n#placeIncrement#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -596,6 +604,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#initialize#0" expanded="false" />
+            <element signature="e#650#756#0" expanded="false" />
+            <element signature="e#823#913#0" expanded="false" />
+            <element signature="e#1810#1850#0" expanded="false" />
+            <element signature="e#1921#1962#0" expanded="false" />
+            <element signature="e#2040#2114#0" expanded="false" />
+            <element signature="e#2188#2263#0" expanded="false" />
+            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
+            <element signature="n#!!block;n#calc#0" expanded="false" />
+            <element signature="e#3053#3502#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -610,6 +630,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -624,6 +645,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#initialize#0" expanded="false" />
+            <element signature="e#650#756#0" expanded="false" />
+            <element signature="e#823#913#0" expanded="false" />
+            <element signature="e#1810#1850#0" expanded="false" />
+            <element signature="e#1921#1962#0" expanded="false" />
+            <element signature="e#2040#2114#0" expanded="false" />
+            <element signature="e#2188#2263#0" expanded="false" />
+            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
+            <element signature="n#!!block;n#calc#0" expanded="false" />
+            <element signature="e#3053#3502#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,6 +671,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -683,6 +717,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42869565">
           <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -768,18 +803,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/StyleTask8.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 1/ScriptTask1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19217391">
           <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#initialize#0" expanded="false" />
+            <element signature="e#650#756#0" expanded="false" />
+            <element signature="e#823#913#0" expanded="false" />
+            <element signature="e#1810#1850#0" expanded="false" />
+            <element signature="e#1921#1962#0" expanded="false" />
+            <element signature="e#2040#2114#0" expanded="false" />
+            <element signature="e#2188#2263#0" expanded="false" />
+            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
+            <element signature="n#!!block;n#calc#0" expanded="false" />
+            <element signature="e#3053#3502#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -830,20 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#placeAll#0" expanded="false" />
-            <element signature="n#!!block;n#placeAll#0" expanded="false" />
-            <element signature="n#!!block;n#doMarkers#0;n#!!block;n#place#0;n#!!block;n#placeAll#0" expanded="false" />
-            <element signature="n#!!block;n#placeMarkers#0" expanded="false" />
-            <element signature="e#6733#10468#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 8/PlaceMarkers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -856,19 +881,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Task 8/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="313" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc;n#placeAll#0" expanded="false" />
+            <element signature="n#!!block;n#placeAll#0" expanded="false" />
+            <element signature="n#!!block;n#doMarkers#0;n#!!block;n#place#0;n#!!block;n#placeAll#0" expanded="false" />
+            <element signature="n#!!block;n#placeMarkers#0" expanded="false" />
+            <element signature="e#6733#10468#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Task 8/Task8.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="86" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="86" />
+        <state vertical-scroll-proportion="-20.923077">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 8/StyleTask8.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 8/ScriptTask8.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7930435">
-          <caret line="328" column="41" selection-start-line="328" selection-start-column="41" selection-end-line="328" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.42347828">
+          <caret line="286" column="42" selection-start-line="286" selection-start-column="42" selection-end-line="286" selection-end-column="42" />
           <folding>
+            <element signature="e#627#1485#0" expanded="false" />
             <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
@@ -877,11 +925,9 @@
             <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
             <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#addAll#0;n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="e#6127#7664#0" expanded="false" />
-            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="n#!!block;n#gatherInfo#0;n#!!block;n#doThings#0" expanded="false" />
+            <element signature="e#8150#8353#0" expanded="false" />
+            <element signature="n#!!block;n#placeInformation#0;n#!!block;n#placeIncrement#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#doThings#0" expanded="false" />
           </folding>
         </state>
       </provider>
