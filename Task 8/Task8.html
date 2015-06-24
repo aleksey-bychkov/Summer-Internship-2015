@@ -17,12 +17,6 @@
 <body>
 <div id="map-canvas"></div>
 <div id="bus-numbers">
-    <select id="time" onchange="onChange()">
-        <option value="15" id="last15">Last 15 Minutes</option>
-        <option value="30" id="last30">Last 30 Minutes</option>
-        <option value="60" id="last60">Last Hour</option>
-    </select>
-    <br />
     <label><input type="checkbox" id="nextBusOnly" onclick="task8.updateShowingOnlyNextBus(this)"> Display NextBus only</label>
     <p><strong>Vehicle ID</strong></p>
     <ul id="bus-list-1">
@@ -44,17 +38,6 @@
         task8.updateDate();
         task8.addListToElement("bus-list-1", "time");
     });
-
-    function onChange()
-    {
-        task8.updateTime((new Date()), new Date((new Date()).getTime() - ($("#time").val()) * 60000));
-        task8.placeMarkers();
-    }
-
-    function load()
-    {
-        task8.placeAll();
-    }
 
 </script>
 </body>

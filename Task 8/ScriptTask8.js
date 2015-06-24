@@ -184,7 +184,10 @@ function doThings()
                     $busListNode.append(current.VehicleType+ " " + current.VehicleId);
 
                     url.vehicleId = current.VehicleId;
-                    var temp = placeLotsOfMarkers();
+
+                    var end = new Date("Mon Jun 22 2015 15:00:00 GMT-0400 (Eastern Daylight Time)");
+                    var start = new Date(end.getTime() - (60 * 60 * 1000));
+                    var temp = placeLotsOfMarkers(start, end, 900000, current.VehicleId);
 
                     toAdd.markers = temp.markers;
                     toAdd.bounds = temp.bounds;
@@ -234,11 +237,20 @@ function doThings()
         }
     }
 
-    function placeLotsOfMarkers() {
-        var endDate = new Date("Mon Jun 22 2015 15:00:00 GMT-0400 (Eastern Daylight Time)");
-        var startDate = new Date(endDate.getTime() - (60 * 60 * 1000));
+    function gatherInfo()
+    {
+
+    }
+
+    function placeLotsOfMarkers(pStartDate, pEndDate, pInterval, pVehicleId)
+    {
+        var endDate = pEndDate;
+        var startDate = pStartDate;
+        var interval = pInterval;
+
+        url.vehicleId = pVehicleId;
+
         var bounds = new google.maps.LatLngBounds();
-        var interval = 15 * 60 * 1000;
         var numIntervals = (endDate.getTime() - startDate.getTime()) / interval;
         var currentInterval = 1;
         var markers = [];
@@ -253,8 +265,10 @@ function doThings()
             markers: markers
         };
 
-        function placeIncrement(pinterval) {
-            if (url.toUTC.getTime() <= endDate.getTime()) {
+        function placeIncrement(pinterval)
+        {
+            if (url.toUTC.getTime() <= endDate.getTime())
+            {
                 $.ajax(
                     {
                         url: url.markerURL(),
@@ -316,7 +330,8 @@ function doThings()
                                 icon: image,
                                 title: allMarkers.length + "",
                                 position: latlng,
-                                visible: false
+                                visible: false,
+                                information: current
                             }
                         );
 
@@ -326,9 +341,6 @@ function doThings()
                         time = new Date(parseInt(time));
 
                         var content = '<div id="content">' +
-                            '<div id="siteNotice">' +
-                            '</div>' +
-                            '<h1 id="firstHeading" class="firstHeading"></h1>' +
                             '<div id="bodyContent">' +
                             '<table>' +
                             '<tr>' +
