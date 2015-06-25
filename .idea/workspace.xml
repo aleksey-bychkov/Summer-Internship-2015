@@ -2,9 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/ScriptTask9.js" afterPath="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/StyleTask9.css" afterPath="$PROJECT_DIR$/Task 9/StyleTask9.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/Task9.html" afterPath="$PROJECT_DIR$/Task 9/Task9.html" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 2\ScriptTask2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 4\ScriptTask4.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 2\StyleTask2.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 5\ScriptTask5.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\.idea\untitled.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 9\nextBus.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 7\Task7.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 6\StyleTask6.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 1\Image2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 1\ScriptTask1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 7\StyleTask7.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 8\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 9\Task9.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 2\Task2.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 3\Task3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 5\ScriptTask5-1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 7\ScriptTask7.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 4\Task4.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 7\nextBus.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 7\transitIQ.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 9\transitIQ.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 9\StyleTask9.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 6\Task6.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 8\StyleTask8.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 4\Eastbanc.Internship.MapsLocator.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 8\ScriptTask8.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 8\transitIQ.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 7\PlaceMarkers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 8\nextBus.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 5\newMarker.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 9\ScriptTask9.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 8\PlaceMarkers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 5\Task5.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 1\image1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 6\ScriptTask6.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 5\StyleTask5.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 1\Task1.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 8\Task8.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 4\StyleTask4.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\.idea\.name" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,42 +65,7 @@
     <favorites_list name="untitled" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Task9.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 9/Task9.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.55">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptTask9.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43727598">
-              <caret line="374" column="9" selection-start-line="374" selection-start-column="9" selection-end-line="374" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!block;n#makeBusList#0;n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-                <element signature="n#!!block;n#placeInformation#0;n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
-                <element signature="n#!!block;n#clearMap#0;n#!!block;n#makePage#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StyleTask9.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 9/StyleTask9.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,10 +137,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2409" />
+    <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="2418" />
-    <option name="height" value="1308" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -160,143 +166,17 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Summer-Internship-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Task 9" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summer-Internship-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Task 8" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summer-Internship-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Task 7" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summer-Internship-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Task 6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summer-Internship-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Task 5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summer-Internship-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Task 4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summer-Internship-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Task 3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summer-Internship-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Task 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summer-Internship-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Task 1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,27 +291,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2409" y="-9" width="2418" height="1308" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17458333" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21822916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -450,489 +330,5 @@
       <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Task 8/Task8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="95" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/ScriptTask8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#627#1485#0" expanded="false" />
-            <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#placeInformation#0;n#!!block;n#placeIncrement#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#doThings#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/StyleTask8.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/Task8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/ScriptTask8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#627#1485#0" expanded="false" />
-            <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#placeInformation#0;n#!!block;n#placeIncrement#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#doThings#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/PlaceMarkers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="146" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#placeMarkers#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/StyleTask8.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#660#1481#0" expanded="false" />
-            <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/StyleTask7.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 1/Task1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 1/ScriptTask1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#initialize#0" expanded="false" />
-            <element signature="e#650#756#0" expanded="false" />
-            <element signature="e#823#913#0" expanded="false" />
-            <element signature="e#1810#1850#0" expanded="false" />
-            <element signature="e#1921#1962#0" expanded="false" />
-            <element signature="e#2040#2114#0" expanded="false" />
-            <element signature="e#2188#2263#0" expanded="false" />
-            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
-            <element signature="n#!!block;n#calc#0" expanded="false" />
-            <element signature="e#3053#3502#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 2/Task2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 2/ScriptTask2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 1/Task1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 1/ScriptTask1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#initialize#0" expanded="false" />
-            <element signature="e#650#756#0" expanded="false" />
-            <element signature="e#823#913#0" expanded="false" />
-            <element signature="e#1810#1850#0" expanded="false" />
-            <element signature="e#1921#1962#0" expanded="false" />
-            <element signature="e#2040#2114#0" expanded="false" />
-            <element signature="e#2188#2263#0" expanded="false" />
-            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
-            <element signature="n#!!block;n#calc#0" expanded="false" />
-            <element signature="e#3053#3502#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 2/Task2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 2/ScriptTask2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 1/image1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 1/Image2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 4/Eastbanc.Internship.MapsLocator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 2/StyleTask2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 4/StyleTask4.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30493274">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 6/StyleTask6.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 2/ScriptTask2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42869565">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 3/Task3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15124555">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 2/Task2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 5/StyleTask5.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5-1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 5/Task5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21593533">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 4/Task4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1374134">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 5/ScriptTask5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33295965">
-          <caret line="92" column="60" selection-start-line="92" selection-start-column="60" selection-end-line="92" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 4/ScriptTask4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="147" column="8" selection-start-line="147" selection-start-column="8" selection-end-line="150" selection-end-column="11" />
-          <folding>
-            <element signature="e#3381#5630#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 6/ScriptTask6.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22869955">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 6/Task6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038106237">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/StyleTask7.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29565218">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 1/ScriptTask1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19217391">
-          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#initialize#0" expanded="false" />
-            <element signature="e#650#756#0" expanded="false" />
-            <element signature="e#823#913#0" expanded="false" />
-            <element signature="e#1810#1850#0" expanded="false" />
-            <element signature="e#1921#1962#0" expanded="false" />
-            <element signature="e#2040#2114#0" expanded="false" />
-            <element signature="e#2188#2263#0" expanded="false" />
-            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
-            <element signature="n#!!block;n#calc#0" expanded="false" />
-            <element signature="e#3053#3502#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 1/Task1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4991103">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/PlaceMarkers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="146" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#placeMarkers#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/ScriptTask7.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="160" column="4" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="4" />
-          <folding>
-            <element signature="e#660#1481#0" expanded="false" />
-            <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#addListToElement#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#show#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#placeMarkers#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#clearMap#0;n#!!block;n#doThings#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/StyleTask8.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60608697">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/PlaceMarkers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1626087">
-          <caret line="313" column="1" selection-start-line="313" selection-start-column="1" selection-end-line="313" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#placeMarkers#0" expanded="false" />
-            <element signature="n#!!block;n#placeLotsOfMarkers#0" expanded="false" />
-            <element signature="n#!!block;n#placeIncrement#0;n#!!block;n#placeLotsOfMarkers#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3252174">
-          <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="313" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc;n#placeAll#0" expanded="false" />
-            <element signature="n#!!block;n#placeAll#0" expanded="false" />
-            <element signature="n#!!block;n#doMarkers#0;n#!!block;n#place#0;n#!!block;n#placeAll#0" expanded="false" />
-            <element signature="n#!!block;n#placeMarkers#0" expanded="false" />
-            <element signature="e#6733#10468#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/Task8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18149467">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 8/ScriptTask8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68">
-          <caret line="233" column="63" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="63" />
-          <folding>
-            <element signature="e#627#1485#0" expanded="false" />
-            <element signature="n#!!block;n#setBase#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setMap#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateVehicleId#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateDate#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateTime#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#doThings#0" expanded="false" />
-            <element signature="n#!!block;n#placeInformation#0;n#!!block;n#placeIncrement#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#doThings#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 7/Task7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4572954">
-          <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 9/StyleTask9.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 9/Task9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.55">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43727598">
-          <caret line="374" column="9" selection-start-line="374" selection-start-column="9" selection-end-line="374" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!block;n#makeBusList#0;n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="n#!!block;n#placeInformation#0;n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="n#!!block;n#clearMap#0;n#!!block;n#makePage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
