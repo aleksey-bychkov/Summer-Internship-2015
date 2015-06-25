@@ -58,7 +58,7 @@
 
     function onChange()
     {
-        task7.updateTime((new Date()), new Date((new Date()).getTime() - (document.getElementById("time").value) * 60000));
+        task7.updateTime((new Date()), new Date((new Date()).getTime() - ($("#time").val()) * 60000));
         task7.placeMarkers();
     }
 </script>

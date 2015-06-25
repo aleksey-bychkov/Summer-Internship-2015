@@ -20,6 +20,7 @@ function doThings()
     var transitIQImage = 'transitIQ.png';
     var nextBusImage = 'nextBus.png';
     var markers = [];
+    var buses = [];
     var url =
     {
         markers: "http://transitiqdatareceiver.cloudapp.net/DataReceiver.svc/GetRawCoords",
@@ -31,11 +32,11 @@ function doThings()
         fromUTC: new Date(),
         markerURL: function markerURL()
         {
-            return this.markers + "?vehicleId=" + this.vehicleId + "&key=" + this.key + "&toUtc=" + (this.toUTC.toJSON()).substr(0,19) + "&fromUtc=" + (this.fromUTC.toJSON()).substr(0,19) + "&format=json";
+            return url.markers + "?vehicleId=" + url.vehicleId + "&key=" + url.key + "&toUtc=" + (url.toUTC.toJSON()).substr(0,19) + "&fromUtc=" + (url.fromUTC.toJSON()).substr(0,19) + "&format=json";
         },
         busListURL: function busListURL()
         {
-            return this.busList + "?orgId=" + this.key + "&serviceDate=" + this.currentDate + "&inServiceOnly=true&activeDevicesOnly=true&format=json";
+            return url.busList + "?orgId=" + url.key + "&serviceDate=" + url.currentDate + "&inServiceOnly=true&activeDevicesOnly=true&format=json";
         }
     };
 
@@ -82,7 +83,6 @@ function doThings()
     //updates the time you want to grab things from
     function updateTime(ptoUTC, pfromUTC)
     {
-
         url.toUTC = ptoUTC;
         url.fromUTC = pfromUTC;
     }
@@ -127,31 +127,30 @@ function doThings()
                 (function addBuses()
                 {
                     var current = data[index];
-                    var busListNode = document.createElement("li");
-                    busListNode.id = current.VehicleType + ":" + current.VehicleId;
 
-                    var bus = document.createTextNode(current.VehicleType+ " " + current.VehicleId);
-                    busListNode.className = "notSelected";
+                    bus
 
-                    busListNode.appendChild(bus);
-
-                    busListNode.onclick = function onClick()
+                    var $busListNode = $("<li>",
                     {
+                        id: current.VehicleId,
+                        class: "notSelected"
+                    });
 
-                        var old = $(document.getElementById(addElementID)).find(".selected");
-                        for(var x=0; x<old.length; x++)
-                        {
-                            old[x].className = "notSelected";
-                        }
+                    $busListNode.append(current.VehicleType+ " " + current.VehicleId);
 
-                        busListNode.className = "selected";
+                    $busListNode.click(function onClick()
+                    {
+                        $("#" + addElementID).find("li.selected").attr("class", "notSelected");
+
+                        $busListNode.attr("class", "selected");
+
 
                         updateVehicleId(current.VehicleId);
-                        updateTime((new Date()), new Date((new Date()).getTime() - (document.getElementById(timeID).value) * 60000));
+                        updateTime((new Date()), new Date((new Date()).getTime() - ($("#" + timeID).val()) * 60000));
                         placeMarkers();
-                    };
+                    });
 
-                    document.getElementById(addElementID).appendChild(busListNode);
+                    $("#" + addElementID).append($busListNode);
                 })();
             }
         }
@@ -206,6 +205,7 @@ function doThings()
                         place(data);
                     else
                     {
+                        $("#" + url.vehicleId).attr("class", "notWorking");
                         alert("Data was empty");
                     }
 
@@ -245,9 +245,7 @@ function doThings()
 
                     var image = {
                         url: markerImage,
-                        // This marker is 20 pixels wide by 32 pixels tall.
                         size: new google.maps.Size(mSize, mSize),
-                        // The origin for this image is 0,0.
                         origin: new google.maps.Point(mSize/2,mSize/2)
                     };
 
@@ -262,6 +260,7 @@ function doThings()
                         }
                     );
 
+                    //makes the info window
                     var time = current.ReportDateUtc;
                     time = time.substring(time.indexOf("(")+1, time.indexOf(")"));
                     time = new Date(parseInt(time));
