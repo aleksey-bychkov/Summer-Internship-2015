@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server hostname="localhost" id="J2EE Preview at localhost" name="J2EE Preview at localhost" runtime-id="J2EE Preview" server-type="org.eclipse.jst.server.preview.server" server-type-id="org.eclipse.jst.server.preview.server" start-timeout="240" stop-timeout="240" timestamp="6">
+    <list key="modules" value0="Project 1::org.eclipse.jst.jee.server:Project 1::jst.web::3.0" value1="Project2::org.eclipse.jst.j2ee.server:Project2::jst.web::2.3"/>
+  </server>
+</servers>
