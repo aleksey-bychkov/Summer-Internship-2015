@@ -17,16 +17,26 @@
     <body>
         <div id="map-canvas"></div>
 
-        <div id="bus-numbers">
-            <label><input type="checkbox" id="nextBusOnly" onclick="task8.updateShowingOnlyNextBus(this)"> Display NextBus only</label>
-            <p><strong>Vehicle ID</strong></p>
-                <ul id="bus-list-1">
-            </ul>
+        <div id="time">
+            <select id="timeDropDown" onchange="onChange()">
+                <option value="3600000">Past Hour</option>
+                <option value="7200000">Past 2 Hours</option>
+                <option value="18000000">Past 5 hours</option>
+            </select>
+        </div>
+
+        <div id="buses">
+            <label><input type="checkbox" id="nextBusOnly" onclick="page.updateShowingOnlyNextBus(this)"> <strong>Display NextBus only</strong></label>
+            <section id="changes">
+                <ul id="busList">
+
+                </ul>
+            </section>
         </div>
 
         <script>
 
-            var task8 = doThings();
+            var page = makePage();
 
             google.maps.event.addDomListener(window, 'load', function load()
             {
@@ -36,10 +46,17 @@
                             zoom: 15
                         });
 
-                task8.setMap(map);
-                task8.addListToElement("bus-list-1", "time");
+                page.setMap(map);
+                page.replaceBusList("busList");
             });
 
+            function onChange()
+            {
+                var endTime = new Date();
+                var startTime = new Date(endTime.getTime() - parseInt($("#timeDropDown").val()));
+
+                page.setTime(endTime,startTime);
+            }
         </script>
     </body>
 </html>

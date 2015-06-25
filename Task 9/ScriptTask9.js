@@ -1,14 +1,15 @@
-function doThings()
+function makePage()
 {
     var publicAPI =
     {
-        clearMarkers: clearMap,
-        addListToElement: addListToElement,
+        clearMap: clearMap,
+        replaceBusList: replaceBusList,
         updateShowingOnlyNextBus: updateShowingOnlyNextBus,
-        setBase: setBase,
+        setServerAddress: setServerAddress,
         setMap: setMap,
         setNextBusImage: setNextBusImage,
-        setTransitIQImage: setTransitIQImage
+        setTransitIQImage: setTransitIQImage,
+        setTime: setTime
     };
 
     var map;
@@ -18,6 +19,10 @@ function doThings()
     var allMarkers = [];
     var buses = [];
     var infoWindow;
+    var endDate = new Date();
+    var startDate = new Date(endDate.getTime() - (60 * 60 * 1000));
+
+
     var url =
     {
         markerList: "http://transitiqdatareceiver.cloudapp.net/DataReceiver.svc/GetRawCoords",
@@ -35,14 +40,22 @@ function doThings()
 
     return publicAPI;
 
-    //updates the variables inside.
-    function setBase(pmarkerList, pkey, pbusList)
+    //updates the location of the from where the location is retrived
+    function setServerAddress(pmarkerList, pkey, pbusList)
     {
         url.markerList = pmarkerList;
         url.busList = pbusList;
         url.key = pkey;
     }
 
+    function setTime(pendTime, pstartTime)
+    {
+        endDate = pendTime;
+        startDate = pstartTime;
+
+        clearMap()
+    }
+    
     //sets the map the the paramater map
     function setMap(pmap)
     {
@@ -68,8 +81,8 @@ function doThings()
         show();
     }
 
-    //adds a list of all the active buses to the toAddToElementID
-    function addListToElement(toAddToElementID)
+    //adds a list of all the active buses to the elementToReplaceID
+    function replaceBusList(elementToReplaceID)
     {
         $.ajax(
             {
@@ -78,12 +91,7 @@ function doThings()
                 dataType: "jsonp",
                 success: function(data)
                 {
-                    if(data.length >= 1)
-                        addAll(toAddToElementID, data);
-                    else
-                    {
-                        alert("No buses");
-                    }
+                    $("#" + elementToReplaceID).replaceWith(makeBusList(data));
                 },
                 error: function ()
                 {
@@ -91,11 +99,13 @@ function doThings()
                 }
             });
 
-
-        function addAll(addElementID, data)
+        //adds all the data to to the element with the ID of "addElementID"
+        function makeBusList(data)
         {
-            var end = new Date();
-            var start = new Date(end.getTime() - (2 * 60 * 60 * 1000));
+            var $BusList = $("<ul>",
+            {
+                id: "BusList" + (new Date()).toJSON()
+            });
 
             for(var index = 0; index < data.length; index++)
             {
@@ -104,7 +114,7 @@ function doThings()
                     var current = data[index];
 
                     //List element added to the page
-                    var $busListNode = $("<li>",
+                    var $bus = $("<li>",
                     {
                         id: current.VehicleId
                     });
@@ -117,8 +127,8 @@ function doThings()
                     });
 
                     //adds the checkbox to the element along with the mane of the element
-                    $busListNode.append($checkbox);
-                    $busListNode.append(current.VehicleType+ " " + current.VehicleId);
+                    $bus.append($checkbox);
+                    $bus.append(current.VehicleType+ " " + current.VehicleId);
 
                     //element added to buses array
                     var toAdd =
@@ -126,19 +136,17 @@ function doThings()
                         busNumber: current.VehicleId,
                         bounds: new google.maps.LatLngBounds(),
                         markers: [],
-                        checked: false,
                         made: false
                     };
 
-                    $busListNode.click(function onClick()
+                    $bus.click(function onClick()
                     {
-                        toAdd.checked = $checkbox.is(":checked");
 
                         //if the markers have already been made turns them on
-                        if(!toAdd.made && toAdd.checked)
+                        if(!toAdd.made && $(toAdd.checkBox).is(":checked"))
                         {
                             //places the markers
-                            var temp = placeLotsOfMarkers(start, end, 900000, current.VehicleId);
+                            var temp = placeLotsOfMarkers(startDate, endDate, 900000, current.VehicleId);
 
                             //updates toAdd's markers and bounds
                             toAdd.markers = temp.markers;
@@ -153,99 +161,77 @@ function doThings()
                             //iterates throught the markers and applies and sets the visavility on the status of the checkboxs checked status
                             for (var markerIndex = 0; markerIndex < toAdd.markers.length; markerIndex++)
                             {
-                                (function () {
+                                (function ()
+                                {
                                     if(showingOnlyNextBus)
                                     {
                                         if(toAdd.markers[markerIndex].icon.url === transitIQImage)
                                             toAdd.markers[markerIndex].setVisible(false);
                                         else
-                                            toAdd.markers[markerIndex].setVisible(toAdd.checked);
+                                            toAdd.markers[markerIndex].setVisible($(toAdd.checkBox).is(":checked"));
                                     }
                                     else
                                     {
-                                        toAdd.markers[markerIndex].setVisible(toAdd.checked);
+                                        toAdd.markers[markerIndex].setVisible($(toAdd.checkBox).is(":checked"));
                                     }
                                 }());
                             }
+
+                            updateBounds();
                         }
 
-                        //makes the bounds work
-                        var bounds = new google.maps.LatLngBounds();
 
-                        //goes through all the buses and extends the bounds of the map to include them IF they aren't the default bounds
-                        for(var x = 0; x < buses.length; x++)
-                        {
-                            if(buses[x].made && buses[x].checked)
-                            {
-                                if (!buses[x].bounds.equals(new google.maps.LatLngBounds()))
-                                    bounds.union(buses[x].bounds);
-                            }
-                        }
-
-                        //resets the bounds
-                        map.fitBounds(new google.maps.LatLngBounds(null));
-
-                        //set the bounds on the bounds of the markers OR on the whitehouse if default bounds
-                        if(!bounds.equals(new google.maps.LatLngBounds()))
-                            map.fitBounds(bounds);
-                        else
-                        {
-                            map.panTo(new google.maps.LatLng(38.8977, -77.0366));
-                            map.setZoom(15);
-                        }
                     });
 
                     //adds the current bus to the array of buses
                     buses.push(toAdd);
 
-                    //adds the eleemt to the page
-                    $("#" + addElementID).append($busListNode);
+                    toAdd.checkBox = $checkbox;
+
+                    //adds the list item to the $BusList
+                    $BusList.append($bus);
                 })();
             }
 
+            return $BusList
         }
     }
 
     //places markers from pStartDate to pEndDate with the VehicleId of pVehicleId on the map
-    function placeLotsOfMarkers(pStartDate, pEndDate, pInterval, pVehicleId)
+    function placeLotsOfMarkers(pstartDate, pendDate, interval, vehicleId)
     {
-        var endDate = pEndDate;
-        var startDate = pStartDate;
-        var interval = pInterval;
-
         var bounds = new google.maps.LatLngBounds();
-        var numIntervals = (endDate.getTime() - startDate.getTime()) / interval;
-        var currentInterval = 1;
+        var numIntervals = (pendDate.getTime() - pstartDate.getTime()) / interval;
+        var currentInterval = 0;
         var markers = [];
 
-        var startTime = startDate;
-        var endTime = new Date(startDate.getTime() + (interval));
-
-        placeIncrement(interval);
+        placeIncrementOfMarkers(interval, pstartDate, pendDate);
 
         return {
             bounds: bounds,
             markers: markers
         };
 
-        function placeIncrement(pinterval)
+        function placeIncrementOfMarkers(pinterval, pstartTime, pendTime)
         {
-            if(endTime.getTime() <= endDate.getTime())
+            if(pendTime.getTime() <= endDate.getTime())
             {
                 $.ajax(
                     {
-                        url: url.markerURL(startTime, endTime, pVehicleId),
+                        url: url.markerURL(pstartTime, pendTime, vehicleId),
                         jsonp: "callback",
                         dataType: "jsonp",
                         success: function (info)
                         {
-                            startTime = endTime;
-                            endTime = new Date(startTime.getTime() + pinterval);
+                            placeInformation(info, (25 * currentInterval) / numIntervals);
+
+                            pstartTime = pendTime;
+                            pendTime = new Date(pstartTime.getTime() + pinterval);
                             currentInterval++;
 
-                            placeIncrement(pinterval);
+                            updateBounds();
 
-                            placeInformation(info, (25 * currentInterval) / numIntervals);
+                            placeIncrementOfMarkers(pinterval, pstartTime, pendTime);
                         },
                         error: function ()
                         {
@@ -297,6 +283,10 @@ function doThings()
                                 information: current
                             }
                         );
+
+                        if(showingOnlyNextBus)
+                            if(marker.icon.url === transitIQImage)
+                                marker.visible = false;
 
                         //makes the info window
                         var time = current.ReportDateUtc;
@@ -356,14 +346,43 @@ function doThings()
         }
     }
 
-    //if showingOnlyNextBus is true then only shows showingOnlyNextBus
+    //updates the bounds of the map according to all the checked buses
+    function updateBounds()
+    {
+        //makes the bounds work
+        var bounds = new google.maps.LatLngBounds();
+
+        //goes through all the buses and extends the bounds of the map to include them IF they aren't the default bounds
+        for(var x = 0; x < buses.length; x++)
+        {
+            if(buses[x].made && $(buses[x].checkBox).is(":checked"))
+            {
+                if (!buses[x].bounds.equals(new google.maps.LatLngBounds()))
+                    bounds.union(buses[x].bounds);
+            }
+        }
+
+        //resets the bounds
+        map.fitBounds(new google.maps.LatLngBounds(null));
+
+        //set the bounds on the bounds of the markers OR on the whitehouse if default bounds
+        if(!bounds.equals(new google.maps.LatLngBounds()))
+            map.fitBounds(bounds);
+        else
+        {
+            map.panTo(new google.maps.LatLng(38.8977, -77.0366));
+            map.setZoom(15);
+        }
+    }
+
+    //Makers sure the visible markers are corresponding to the status of showingOnlyNextBus
     function show()
     {
         //checks the buses first
         for(var index=0; index < buses.length; index++)
         {
             //if the bus is checked checks for next bus markers
-            if(buses[index].checked)
+            if($(buses[index].checkBox).is(":checked"))
             {
                 for(var x = 0; x < buses[index].markers.length; x++)
                 {
@@ -395,6 +414,20 @@ function doThings()
             allMarkers[i].setMap(null);
         }
 
+        for(var index=0; index < buses.length; index++)
+        {
+            for(var x = 0; x < buses[index].markers.length; x++)
+            {
+                (function()
+                {
+                    buses[index].markers[x].setMap(null);
+                }());
+            }
+            $(buses[index].checkBox).prop('checked', false);
+            buses[index].made = false;
+        }
+
         allMarkers = [];
+        infoWindow = undefined;
     }
 }

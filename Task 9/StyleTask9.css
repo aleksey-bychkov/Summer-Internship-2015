@@ -21,7 +21,7 @@ html, body, ul, #map-canvas, #bus-numbers
     color: red;
 }
 
-#bus-list-1
+ul
 {
     height: 700px;
     list-style-type: none;
