@@ -178,7 +178,7 @@ function makePage()
                                 }());
                             }
 
-                            updateBounds();
+                            //updateBounds();
                         }
 
 
@@ -186,7 +186,6 @@ function makePage()
 
                     //adds the current bus to the array of buses
                     buses.push(toAdd);
-
                     toAdd.checkBox = $checkbox;
 
                     //adds the list item to the $BusList
@@ -263,7 +262,7 @@ function makePage()
 
 
                         //grabs the location for the marker from current and adds it to the bounds of the map
-                        latlng = new Microsoft.Maps.Point(current.Lat, current.Lon);
+                        latlng = new Microsoft.Maps.Location(current.Lat, current.Lon);
                         bounds.push(latlng);
 
                         //calculates the size diffrence between every data point
@@ -303,17 +302,17 @@ function makePage()
                         var marker = new Microsoft.Maps.Pushpin(latlng,
                             {
                                 icon: transitIQImage,
-                                height: mSize,
-                                width: mSize,
+                                //height: mSize,
+                                //width: mSize,
                                 anchor: new Microsoft.Maps.Point(mSize / 2, mSize / 2),
                                 draggable: false,
                                 visable: true,
-                                zIndex: 5,
-                                infobox: new Microsoft.Maps.Infobox(latlng,
-                            {
-                                htmlContent: content,
-                                visable: false
-                            })
+                                zIndex: 5//,
+                                //infobox: new Microsoft.Maps.Infobox(latlng,
+                                //{
+                                 //   htmlContent: content,
+                                 //   visable: false
+                                //})
                             });
 
                         //sets the apropreate image and z index for the markers
@@ -324,6 +323,7 @@ function makePage()
                             marker.visible = false
                         }
 
+                        /*
                         Microsoft.Maps.Events.addHandler(marker, "click", function showInfoWindow()
                         {
                             //if a infoWindow already exsits closes it
@@ -334,10 +334,13 @@ function makePage()
                             infoWindow = marker.infobox;
                             infoWindow.setOptions({visable: false});
                         });
+*/
+                        map.entities.push(marker);
 
                         //adds the markers to the total markers on the map and the array of markers added
                         markers.push(marker);
                         allMarkers.push(marker);
+
                     })();
                 }
             }

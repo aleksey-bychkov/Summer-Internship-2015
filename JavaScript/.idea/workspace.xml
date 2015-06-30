@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/ScriptTask10.js" afterPath="$PROJECT_DIR$/Task 10/ScriptTask10.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/ScriptTask9.js" afterPath="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/StyleTask10.css" afterPath="$PROJECT_DIR$/Task 10/StyleTask10.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/Task10.html" afterPath="$PROJECT_DIR$/Task 10/Task10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="Task10.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 10/Task10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.153847">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state vertical-scroll-proportion="-31.461538">
+              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -40,8 +38,8 @@
       <file leaf-file-name="ScriptTask10.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 10/ScriptTask10.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7669565">
-              <caret line="368" column="24" selection-start-line="368" selection-start-column="24" selection-end-line="368" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.26">
+              <caret line="304" column="34" selection-start-line="304" selection-start-column="34" selection-end-line="304" selection-end-column="34" />
               <folding>
                 <element signature="e#677#1396#0" expanded="false" />
                 <element signature="n#!!block;n#setServerAddress#0;n#!!block;n#makePage#0" expanded="false" />
@@ -50,10 +48,7 @@
                 <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#makePage#0" expanded="false" />
-                <element signature="e#7562#8598#0" expanded="false" />
-                <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
-                <element signature="e#15375#15426#0" expanded="false" />
-                <element signature="e#15585#15954#0" expanded="false" />
+                <element signature="e#7563#8599#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -394,7 +389,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="37" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -833,16 +828,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 10/Task10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.153847">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state vertical-scroll-proportion="-31.461538">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 10/ScriptTask10.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7669565">
-          <caret line="368" column="24" selection-start-line="368" selection-start-column="24" selection-end-line="368" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.26">
+          <caret line="304" column="34" selection-start-line="304" selection-start-column="34" selection-end-line="304" selection-end-column="34" />
           <folding>
             <element signature="e#677#1396#0" expanded="false" />
             <element signature="n#!!block;n#setServerAddress#0;n#!!block;n#makePage#0" expanded="false" />
@@ -851,10 +846,7 @@
             <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="e#7562#8598#0" expanded="false" />
-            <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="e#15375#15426#0" expanded="false" />
-            <element signature="e#15585#15954#0" expanded="false" />
+            <element signature="e#7563#8599#0" expanded="false" />
           </folding>
         </state>
       </provider>
