@@ -44,20 +44,17 @@
 
             var page = makePage();
 
-            $("#progressbar").progressbar({value: 10});
+            $("#progressbar").progressbar({value: 0});
 
 
-            google.maps.event.addDomListener(window, 'load', function load()
+            var map = new google.maps.Map(document.getElementById('map-canvas'),
             {
-                var map = new google.maps.Map(document.getElementById('map-canvas'),
-                        {
-                            center: new google.maps.LatLng(38.8977, -77.0366),
-                            zoom: 15
-                        });
-
-                page.setMap(map);
-                page.replaceBusList("busList");
+                center: new google.maps.LatLng(38.8977, -77.0366),
+                zoom: 15
             });
+
+            page.setMap(map);
+            page.replaceBusList("busList");
 
             function onChange()
             {
