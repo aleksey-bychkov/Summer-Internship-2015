@@ -167,18 +167,18 @@ function makePage()
                                     if(showingOnlyNextBus)
                                     {
                                         if(toAdd.markers[markerIndex].icon === transitIQImage)
-                                            toAdd.markers[markerIndex].setVisible(false);
+                                            toAdd.markers[markerIndex].setOptions({visible: false});
                                         else
-                                            toAdd.markers[markerIndex].setVisible($(toAdd.checkBox).is(":checked"));
+                                            toAdd.markers[markerIndex].setOptions({visible: $(toAdd.checkBox).is(":checked")});
                                     }
                                     else
                                     {
-                                        toAdd.markers[markerIndex].setVisible($(toAdd.checkBox).is(":checked"));
+                                        toAdd.markers[markerIndex].setOptions({visible: $(toAdd.checkBox).is(":checked")});
                                     }
                                 }());
                             }
 
-                            //updateBounds();
+                            updateBounds();
                         }
 
 
@@ -273,68 +273,57 @@ function makePage()
                         time = time.substring(time.indexOf("(") + 1, time.indexOf(")"));
                         time = new Date(parseInt(time));
 
-                        var content = '<div id="content">' +
-                            '<div id="bodyContent">' +
-                            '<table>' +
-                            '<tr>' +
-                            '<th>Agency Id</th><td>' + current.AgencyId + '</td>' +
-                            '</tr>' +
-                            '<tr>' +
-                            '<th>Device Id</th><td>' + current.DeviceId + '</td>' +
-                            '</tr>' +
-                            '<tr>' +
-                            '<th>Is Standing</th><td>' + current.IsStanding + '</td>' +
-                            '</tr>' +
-                            '<tr>' +
-                            '<th>Location</th><td>' + latlng.toString() + '</td>' +
-                            '</tr>' +
-                            '<tr>' +
-                            '<th>Vehicle Id</th><td>' + current.VehicleId + '</td>' +
-                            '</tr>' +
-                            '<tr>' +
-                            '<th>Time</th><td>' + time + '</td>' +
-                            '</tr>' +
-                            '</table>' +
-                            '</div>' +
-                            '</div>';
+                        var content = "Agency Id: " + current.AgencyId + "\n" +
+                            "Device Id: " + current.DeviceId + "\n" +
+                            "Is Standing: " + current.IsStanding + "\n" +
+                            "Location: " + latlng.toString() + "\n" +
+                            "Vehicle Id: " + current.VehicleId + "\n" +
+                            "Time: " + time + "\n";
+
 
                         //makes the marker
                         var marker = new Microsoft.Maps.Pushpin(latlng,
                             {
                                 icon: transitIQImage,
-                                //height: mSize,
-                                //width: mSize,
+                                height: mSize,
+                                width: mSize,
                                 anchor: new Microsoft.Maps.Point(mSize / 2, mSize / 2),
                                 draggable: false,
-                                visable: true,
-                                zIndex: 5//,
-                                //infobox: new Microsoft.Maps.Infobox(latlng,
-                                //{
-                                 //   htmlContent: content,
-                                 //   visable: false
-                                //})
+                                visible: true,
+                                zIndex: 5,
+                                infobox: new Microsoft.Maps.Infobox(latlng,
+                                {
+                                    title: "Information",
+                                    description: content,
+                                    zIndex: 15
+                                })
                             });
 
                         //sets the apropreate image and z index for the markers
                         if (current.DeviceId == null)
                         {
-                            marker.zIndex = 10;
-                            marker.icon = nextBusImage;
-                            marker.visible = false
+                            marker.setOptions({
+                                zIndex: 10,
+                                icon: nextBusImage
+                            });
                         }
 
-                        /*
-                        Microsoft.Maps.Events.addHandler(marker, "click", function showInfoWindow()
+                        if(showingOnlyNextBus)
+                            if(marker.icon._url == transitIQImage)
+                                marker.setOptions({visible: false});
+
+
+                        Microsoft.Maps.Events.addHandler(marker, 'click', function()
                         {
                             //if a infoWindow already exsits closes it
                             if(infoWindow)
-                                infoWindow.setOptions({visable: false});
+                                map.entities.remove(infoWindow);
 
-                            //resets the infoWindow and makes the current infoWindow visable
-                            infoWindow = marker.infobox;
-                            infoWindow.setOptions({visable: false});
+                            //resets the infoWindow and makes the current infoWindow visible
+                            infoWindow = marker._infobox;
+                            map.entities.push(infoWindow);
                         });
-*/
+
                         map.entities.push(marker);
 
                         //adds the markers to the total markers on the map and the array of markers added
@@ -365,12 +354,9 @@ function makePage()
         bounds = Microsoft.Maps.LocationRect.fromLocations(bounds);
 
         //set the bounds on the bounds of the markers OR on the whitehouse if default bounds
-        if(bounds.toString() != Microsoft.Maps.LocationRect.fromLocations().toString())
+        if(bounds.toString() == Microsoft.Maps.LocationRect.fromLocations().toString())
         {
-            map.setView({
-                bounds: new Microsoft.Maps.LocationRect(new Microsoft.Maps.Location(38.8977, -77.0366)),
-                zoom: 15
-            });
+            map.setView({bounds: Microsoft.Maps.LocationRect.fromLocations(new Microsoft.Maps.Location(38.8977, -77.0366))});
         }
         else
         {
@@ -387,26 +373,19 @@ function makePage()
             //if the bus is checked checks for next bus markers
             if($(buses[index].checkBox).is(":checked"))
             {
-                for(var x = 0; x < buses[index].markers.length; x++)
+                for (var markerIndex = 0; markerIndex < buses[index].markers.length; markerIndex++)
                 {
-                    (function()
+                    if(showingOnlyNextBus)
                     {
-                        var current =  buses[index].markers[x];
-
-                        //if showingOnlyNextBus then makes sure only the markers that are supposed to be shown are shown
-                        //otherwise shows all markers
-                        if(showingOnlyNextBus)
-                        {
-                            if(current.icon.url === transitIQImage)
-                                current.setVisible(false);
-                            else
-                                current.setVisible(true);
-                        }
+                        if(buses[index].markers[markerIndex]._icon == transitIQImage)
+                            buses[index].markers[markerIndex].setOptions({visible: false});
                         else
-                        {
-                            current.setVisible(true);
-                        }
-                    }());
+                            buses[index].markers[markerIndex].setOptions({visible: true});
+                    }
+                    else
+                    {
+                        buses[index].markers[markerIndex].setOptions({visible: true});
+                    }
                 }
             }
         }
@@ -415,22 +394,9 @@ function makePage()
     //clears the map of all allMarkers
     function clearMap()
     {
-        //destroys all association between markers and the map
-        for(var i = 0; i < allMarkers.length; i++)
-        {
-            allMarkers[i].setMap(null);
-        }
-
         //destroys all association between markers and the map from there secondary location
         for(var index=0; index < buses.length; index++)
         {
-            for(var x = 0; x < buses[index].markers.length; x++)
-            {
-                (function()
-                {
-                    buses[index].markers[x].setMap(null);
-                }());
-            }
             buses[index].markers = [];
             $(buses[index].checkBox).prop('checked', false);
             buses[index].made = false;
@@ -438,5 +404,9 @@ function makePage()
 
         allMarkers = [];
         infoWindow = undefined;
+
+        map.entities.clear();
+
+        updateBounds();
     }
 }
