@@ -213,6 +213,8 @@ function makePage()
         placeIncrementOfMarkers(interval, pstartDate, new Date(pstartDate.getTime() + interval));
 
 
+        //returns an object with the bounds of the markers and the actual markers
+
         return {
             bounds: bounds,
             markers: markers
@@ -220,8 +222,10 @@ function makePage()
 
         function placeIncrementOfMarkers(pinterval, pstartTime, pendTime)
         {
+            //keeps going untill the end time is bigger then the endDate
             if(pendTime.getTime() <= endDate.getTime())
             {
+                //grabs the data from the server
                 $.ajax(
                     {
                         url: url.markerURL(pstartTime, pendTime, vehicleId),
@@ -229,11 +233,13 @@ function makePage()
                         dataType: "jsonp",
                         success: function (info)
                         {
+                            //places the info on the map
                             placeInformation(info, (25 * currentInterval) / numIntervals);
 
-
+                            //updates the progressbar
                             $progressbar.progressbar("value", (($progressbar.progressbar("value")) + 100/numIntervals));
 
+                            //moves the interval up and calls itself again to place the next interval
                             pstartTime = pendTime;
                             pendTime = new Date(pstartTime.getTime() + pinterval);
                             currentInterval++;
@@ -339,10 +345,9 @@ function makePage()
     //updates the bounds of the map according to all the checked buses
     function updateBounds()
     {
-        //makes the bounds work
         var bounds = [];
 
-        //goes through all the buses and extends the bounds of the map to include them IF they aren't the default bounds
+        //goes through all the buses and extends the bounds of the map
         for(var x = 0; x < buses.length; x++)
         {
             if(buses[x].made && $(buses[x].checkBox).is(":checked"))
@@ -351,9 +356,10 @@ function makePage()
             }
         }
 
+        //transforms the array into LocationRect object
         bounds = Microsoft.Maps.LocationRect.fromLocations(bounds);
 
-        //set the bounds on the bounds of the markers OR on the whitehouse if default bounds
+        //set the bounds on the bounds of the markers OR on the whitehouse
         if(bounds.toString() == Microsoft.Maps.LocationRect.fromLocations().toString())
         {
             map.setView({bounds: Microsoft.Maps.LocationRect.fromLocations(new Microsoft.Maps.Location(38.8977, -77.0366))});
@@ -373,8 +379,9 @@ function makePage()
             //if the bus is checked checks for next bus markers
             if($(buses[index].checkBox).is(":checked"))
             {
-                for (var markerIndex = 0; markerIndex < buses[index].markers.length; markerIndex++)
+                for(var markerIndex = 0; markerIndex < buses[index].markers.length; markerIndex++)
                 {
+                    //checks if showing Only Next Bus if it is Only shows Next Bus
                     if(showingOnlyNextBus)
                     {
                         if(buses[index].markers[markerIndex]._icon == transitIQImage)
@@ -382,6 +389,7 @@ function makePage()
                         else
                             buses[index].markers[markerIndex].setOptions({visible: true});
                     }
+                    //otherwise shows all
                     else
                     {
                         buses[index].markers[markerIndex].setOptions({visible: true});
@@ -394,7 +402,7 @@ function makePage()
     //clears the map of all allMarkers
     function clearMap()
     {
-        //destroys all association between markers and the map from there secondary location
+        ///wipes all the markers from the bus array
         for(var index=0; index < buses.length; index++)
         {
             buses[index].markers = [];
@@ -405,8 +413,10 @@ function makePage()
         allMarkers = [];
         infoWindow = undefined;
 
+        //clears all entities from the map
         map.entities.clear();
 
+        //rests the bounds
         updateBounds();
     }
 }

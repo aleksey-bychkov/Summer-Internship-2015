@@ -260,14 +260,6 @@ function makePage()
                         //makes a local variable of data that is being used
                         var current = information[index];
 
-                        //sets the apropreate image for the marker
-                        var markerImage = transitIQImage;
-
-                        if (current.DeviceId == null)
-                        {
-                            markerImage = nextBusImage;
-                        }
-
                         //grabs the location for the marker from current and adds it to the bounds of the map
                         latlng = new google.maps.LatLng(current.Lat, current.Lon);
                         bounds.extend(latlng);
@@ -275,34 +267,34 @@ function makePage()
                         //calculates the size diffrence between every data point
                         var mSize = ((index * size) / information.length) + 10;
 
-                        //makes the marker image with the size and sets the origin on the center of the image
-                        var image =
-                        {
-                            url: markerImage,
-                            size: new google.maps.Size(mSize, mSize),
-                            origin: new google.maps.Point(mSize / 2, mSize / 2)
-                        };
-
                         //makes the marker
                         var marker = new google.maps.Marker
                         (
                             {
+                                visible: true,
                                 map: map,
-                                icon: image,
                                 title: allMarkers.length + "",
                                 position: latlng,
-                                visible: true,
                                 information: current,
-                                zIndex: 5
+                                zIndex: 5,
+                                icon: {
+                                    url: transitIQImage,
+                                    size: new google.maps.Size(mSize, mSize),
+                                    origin: new google.maps.Point(mSize / 2, mSize / 2)
+                                }
                             }
                         );
 
+                        //checks if its a nextbus ping or a transit IQ ping
                         if(current.DeviceId == null)
+                        {
                             marker.zIndex = 10;
+                            marker.icon.url = nextBusImage;
+                        }
 
-
+                        //if its showing only nextBus then turns the visabilty of transit IQ pins to false
                         if(showingOnlyNextBus)
-                            if(marker.icon.url === transitIQImage)
+                            if(current.DeviceId != null)
                                 marker.visible = false;
 
                         //makes the info window
@@ -310,6 +302,7 @@ function makePage()
                         time = time.substring(time.indexOf("(") + 1, time.indexOf(")"));
                         time = new Date(parseInt(time));
 
+                        //infoWindow contect for the current marker
                         var content = '<div id="content">' +
                             '<div id="bodyContent">' +
                             '<table>' +

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Task 10/ScriptTask10.js" line="307" />
+    <bookmark url="file://$PROJECT_DIR$/Task 10/ScriptTask10.js" line="313" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/ScriptTask10.js" afterPath="$PROJECT_DIR$/Task 10/ScriptTask10.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/Task10.html" afterPath="$PROJECT_DIR$/Task 10/Task10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/ScriptTask9.js" afterPath="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,36 +38,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask9.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScriptTask9.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="318" column="36" selection-start-line="312" selection-start-column="24" selection-end-line="335" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.27565217">
+              <caret line="221" column="8" selection-start-line="221" selection-start-column="8" selection-end-line="221" selection-end-column="8" />
               <folding>
                 <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="e#7391#7459#0" expanded="false" />
-                <element signature="e#14808#15844#0" expanded="false" />
+                <element signature="n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="e#7660#8634#0" expanded="false" />
+                <element signature="n#!!block;n#updateBounds#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="e#14728#15764#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask10.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScriptTask10.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 10/ScriptTask10.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36782607">
-              <caret line="271" column="57" selection-start-line="271" selection-start-column="57" selection-end-line="271" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="346" column="4" selection-start-line="346" selection-start-column="4" selection-end-line="346" selection-end-column="4" />
               <folding>
                 <element signature="e#677#1396#0" expanded="false" />
                 <element signature="n#!!block;n#setServerAddress#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#setTime#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#setMap#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-                <element signature="e#7594#8630#0" expanded="false" />
+                <element signature="n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#updateBounds#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#clearMap#0;n#!!block;n#makePage#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -144,9 +151,9 @@
         <option value="$PROJECT_DIR$/Task 9/StyleTask9.css" />
         <option value="$PROJECT_DIR$/Task 9/Task9.html" />
         <option value="$PROJECT_DIR$/Task 10/StyleTask10.css" />
-        <option value="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
         <option value="$PROJECT_DIR$/Task 10/Task10.html" />
         <option value="$PROJECT_DIR$/Task 10/ScriptTask10.js" />
+        <option value="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
       </list>
     </option>
   </component>
@@ -407,7 +414,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="42" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -840,33 +847,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="318" column="36" selection-start-line="312" selection-start-column="24" selection-end-line="335" selection-end-column="37" />
-          <folding>
-            <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="e#7391#7459#0" expanded="false" />
-            <element signature="e#14808#15844#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 10/ScriptTask10.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36782607">
-          <caret line="271" column="57" selection-start-line="271" selection-start-column="57" selection-end-line="271" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="346" column="4" selection-start-line="346" selection-start-column="4" selection-end-line="346" selection-end-column="4" />
           <folding>
             <element signature="e#677#1396#0" expanded="false" />
             <element signature="n#!!block;n#setServerAddress#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#setTime#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="n#!!block;n#setMap#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="e#7594#8630#0" expanded="false" />
+            <element signature="n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#updateBounds#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="n#!!block;n#clearMap#0;n#!!block;n#makePage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27565217">
+          <caret line="221" column="8" selection-start-line="221" selection-start-column="8" selection-end-line="221" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="e#7391#7459#0" expanded="false" />
+            <element signature="n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="e#7660#8634#0" expanded="false" />
+            <element signature="n#!!block;n#updateBounds#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="e#14728#15764#0" expanded="false" />
           </folding>
         </state>
       </provider>
