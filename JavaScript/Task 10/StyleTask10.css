@@ -1,0 +1,50 @@
+html, body, ul, #map-canvas, #bus-numbers
+{
+    height: 850px;
+    margin: 0px;
+    padding: 0px;
+    font-size: large;
+}
+
+.selected
+{
+    color: #3543ff;
+}
+
+.notSelected
+{
+    color: black;
+}
+
+.notWorking
+{
+    color: red;
+}
+
+ul
+{
+    height: 700px;
+    list-style-type: none;
+    columns: 2;
+    -webkit-columns: 2;
+}
+
+#progressbar
+{
+    width: 405px;
+    height: 40px;
+    float: right;
+}
+
+#map-canvas
+{
+    position: relative;
+    width: 1500px;
+    float: left;
+}
+
+#bus-numbers
+{
+    width: 400px;
+    float: right;
+}

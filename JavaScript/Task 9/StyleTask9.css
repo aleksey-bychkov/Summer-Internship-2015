@@ -29,6 +29,13 @@ ul
     -webkit-columns: 2;
 }
 
+#progressbar
+{
+    width: 405px;
+    height: 40px;
+    float: right;
+}
+
 #map-canvas
 {
     width: 1500px;

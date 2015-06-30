@@ -48,6 +48,7 @@ function makePage()
         url.key = pkey;
     }
 
+    //sets the time for the
     function setTime(pendTime, pstartTime)
     {
         endDate = pendTime;
@@ -205,7 +206,12 @@ function makePage()
         var currentInterval = 0;
         var markers = [];
 
-        placeIncrementOfMarkers(interval, pstartDate, pendDate);
+        var $progressbar = $("#progressbar");
+
+        $progressbar.progressbar("value", 0);
+
+
+        placeIncrementOfMarkers(interval, pstartDate, new Date(pstartDate.getTime() + interval));
 
         return {
             bounds: bounds,
@@ -224,6 +230,9 @@ function makePage()
                         success: function (info)
                         {
                             placeInformation(info, (25 * currentInterval) / numIntervals);
+
+
+                            $progressbar.progressbar("value", (($progressbar.progressbar("value")) + 100/numIntervals));
 
                             pstartTime = pendTime;
                             pendTime = new Date(pstartTime.getTime() + pinterval);
@@ -253,8 +262,11 @@ function makePage()
 
                         //sets the apropreate image for the marker
                         var markerImage = transitIQImage;
+
                         if (current.DeviceId == null)
+                        {
                             markerImage = nextBusImage;
+                        }
 
                         //grabs the location for the marker from current and adds it to the bounds of the map
                         latlng = new google.maps.LatLng(current.Lat, current.Lon);
@@ -280,9 +292,14 @@ function makePage()
                                 title: allMarkers.length + "",
                                 position: latlng,
                                 visible: true,
-                                information: current
+                                information: current,
+                                zIndex: 5
                             }
                         );
+
+                        if(current.DeviceId == null)
+                            marker.zIndex = 10;
+
 
                         if(showingOnlyNextBus)
                             if(marker.icon.url === transitIQImage)
@@ -389,6 +406,9 @@ function makePage()
                     (function()
                     {
                         var current =  buses[index].markers[x];
+
+                        //if showingOnlyNextBus then makes sure only the markers that are supposed to be shown are shown
+                        //otherwise shows all markers
                         if(showingOnlyNextBus)
                         {
                             if(current.icon.url === transitIQImage)
@@ -409,11 +429,13 @@ function makePage()
     //clears the map of all allMarkers
     function clearMap()
     {
+        //destroys all association between markers and the map
         for(var i = 0; i < allMarkers.length; i++)
         {
             allMarkers[i].setMap(null);
         }
 
+        //destroys all association between markers and the map from there secondary location
         for(var index=0; index < buses.length; index++)
         {
             for(var x = 0; x < buses[index].markers.length; x++)
@@ -423,6 +445,8 @@ function makePage()
                     buses[index].markers[x].setMap(null);
                 }());
             }
+
+            buses[index].markers = [];
             $(buses[index].checkBox).prop('checked', false);
             buses[index].made = false;
         }

@@ -1,0 +1,11 @@
+1435266472766	Move 2 resources to 'lib'
+1435266479127	Move 3 resources to 'WEB-INF'
+1435266618796	Move 'web.xml' to 'WEB-INF'
+1435266871452	Move 3 resources to 'WebContent'
+1435266908272	Rename package 'project1.controllers'
+1435266919334	Rename package 'project1.model'
+1435267208689	Copy compilation unit
+1435267235039	Copy compilation units
+1435267246931	Copy files
+1435267251088	Copy file
+1435267259147	Copy file
