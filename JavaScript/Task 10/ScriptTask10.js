@@ -135,7 +135,7 @@ function makePage()
                     var toAdd =
                     {
                         busNumber: current.VehicleId,
-                        bounds: new google.maps.LatLngBounds(),
+                        bounds: undefined,
                         markers: [],
                         made: false
                     };
@@ -166,7 +166,7 @@ function makePage()
                                 {
                                     if(showingOnlyNextBus)
                                     {
-                                        if(toAdd.markers[markerIndex].icon.url === transitIQImage)
+                                        if(toAdd.markers[markerIndex].icon === transitIQImage)
                                             toAdd.markers[markerIndex].setVisible(false);
                                         else
                                             toAdd.markers[markerIndex].setVisible($(toAdd.checkBox).is(":checked"));
@@ -201,10 +201,10 @@ function makePage()
     //places markers from pStartDate to pEndDate with the VehicleId of pVehicleId on the map
     function placeLotsOfMarkers(pstartDate, pendDate, interval, vehicleId)
     {
-        var bounds = new google.maps.LatLngBounds();
         var numIntervals = (pendDate.getTime() - pstartDate.getTime()) / interval;
         var currentInterval = 0;
         var markers = [];
+        var bounds = [];
 
         var $progressbar = $("#progressbar");
 
@@ -212,6 +212,7 @@ function makePage()
 
 
         placeIncrementOfMarkers(interval, pstartDate, new Date(pstartDate.getTime() + interval));
+
 
         return {
             bounds: bounds,
@@ -260,52 +261,15 @@ function makePage()
                         //makes a local variable of data that is being used
                         var current = information[index];
 
-                        //sets the apropreate image for the marker
-                        var markerImage = transitIQImage;
-
-                        if (current.DeviceId == null)
-                        {
-                            markerImage = nextBusImage;
-                        }
 
                         //grabs the location for the marker from current and adds it to the bounds of the map
-                        latlng = new google.maps.LatLng(current.Lat, current.Lon);
-                        bounds.extend(latlng);
+                        latlng = new Microsoft.Maps.Point(current.Lat, current.Lon);
+                        bounds.push(latlng);
 
                         //calculates the size diffrence between every data point
                         var mSize = ((index * size) / information.length) + 10;
 
-                        //makes the marker image with the size and sets the origin on the center of the image
-                        var image =
-                        {
-                            url: markerImage,
-                            size: new google.maps.Size(mSize, mSize),
-                            origin: new google.maps.Point(mSize / 2, mSize / 2)
-                        };
-
-                        //makes the marker
-                        var marker = new google.maps.Marker
-                        (
-                            {
-                                map: map,
-                                icon: image,
-                                title: allMarkers.length + "",
-                                position: latlng,
-                                visible: true,
-                                information: current,
-                                zIndex: 5
-                            }
-                        );
-
-                        if(current.DeviceId == null)
-                            marker.zIndex = 10;
-
-
-                        if(showingOnlyNextBus)
-                            if(marker.icon.url === transitIQImage)
-                                marker.visible = false;
-
-                        //makes the info window
+                        //gets the content of the info window
                         var time = current.ReportDateUtc;
                         time = time.substring(time.indexOf("(") + 1, time.indexOf(")"));
                         time = new Date(parseInt(time));
@@ -335,23 +299,40 @@ function makePage()
                             '</div>' +
                             '</div>';
 
-                        //makes the infoWindow operatable
-                        google.maps.event.addListener(marker, 'click', function makeWindows()
+                        //makes the marker
+                        var marker = new Microsoft.Maps.Pushpin(latlng,
+                            {
+                                icon: transitIQImage,
+                                height: mSize,
+                                width: mSize,
+                                anchor: new Microsoft.Maps.Point(mSize / 2, mSize / 2),
+                                draggable: false,
+                                visable: true,
+                                zIndex: 5,
+                                infobox: new Microsoft.Maps.Infobox(latlng,
+                            {
+                                htmlContent: content,
+                                visable: false
+                            })
+                            });
+
+                        //sets the apropreate image and z index for the markers
+                        if (current.DeviceId == null)
                         {
-                            //closes infoWindow if one exists
-                            if (infoWindow)
-                                infoWindow.close();
+                            marker.zIndex = 10;
+                            marker.icon = nextBusImage;
+                            marker.visible = false
+                        }
 
-                            //makes and opens a new infoWindow for the current marker
-                            infoWindow = new google.maps.InfoWindow
-                            (
-                                {
-                                    content: content
-                                }
-                            );
+                        Microsoft.Maps.Events.addHandler(marker, "click", function showInfoWindow()
+                        {
+                            //if a infoWindow already exsits closes it
+                            if(infoWindow)
+                                infoWindow.setOptions({visable: false});
 
-                            //binds the infoWindow to the marker & the map
-                            infoWindow.open(map, marker);
+                            //resets the infoWindow and makes the current infoWindow visable
+                            infoWindow = marker.infobox;
+                            infoWindow.setOptions({visable: false});
                         });
 
                         //adds the markers to the total markers on the map and the array of markers added
@@ -367,28 +348,30 @@ function makePage()
     function updateBounds()
     {
         //makes the bounds work
-        var bounds = new google.maps.LatLngBounds();
+        var bounds = [];
 
         //goes through all the buses and extends the bounds of the map to include them IF they aren't the default bounds
         for(var x = 0; x < buses.length; x++)
         {
             if(buses[x].made && $(buses[x].checkBox).is(":checked"))
             {
-                if (!buses[x].bounds.equals(new google.maps.LatLngBounds()))
-                    bounds.union(buses[x].bounds);
+                Array.prototype.push.apply(bounds, buses[x].bounds);
             }
         }
 
-        //resets the bounds
-        map.fitBounds(new google.maps.LatLngBounds(null));
+        bounds = Microsoft.Maps.LocationRect.fromLocations(bounds);
 
         //set the bounds on the bounds of the markers OR on the whitehouse if default bounds
-        if(!bounds.equals(new google.maps.LatLngBounds()))
-            map.fitBounds(bounds);
+        if(bounds.toString() != Microsoft.Maps.LocationRect.fromLocations().toString())
+        {
+            map.setView({
+                bounds: new Microsoft.Maps.LocationRect(new Microsoft.Maps.Location(38.8977, -77.0366)),
+                zoom: 15
+            });
+        }
         else
         {
-            map.panTo(new google.maps.LatLng(38.8977, -77.0366));
-            map.setZoom(15);
+            map.setView({ bounds: bounds});
         }
     }
 
@@ -445,6 +428,7 @@ function makePage()
                     buses[index].markers[x].setMap(null);
                 }());
             }
+            buses[index].markers = [];
             $(buses[index].checkBox).prop('checked', false);
             buses[index].made = false;
         }

@@ -18,7 +18,7 @@
 
 
     </head>
-    <body>
+    <body onload="onLoad()">
         <div id="map-canvas"></div>
 
         <div id="progressbar"></div>
@@ -29,10 +29,10 @@
                 <option value="7200000">Past 2 Hours</option>
                 <option value="18000000">Past 5 hours</option>
             </select>
+            <label><input type="checkbox" id="nextBusOnly" onclick="page.updateShowingOnlyNextBus()"> <strong>Display NextBus only</strong></label>
         </div>
 
         <div id="buses">
-            <label><input type="checkbox" id="nextBusOnly" onclick="page.updateShowingOnlyNextBus(this)"> <strong>Display NextBus only</strong></label>
             <section id="changes">
                 <ul id="busList">
 
@@ -41,20 +41,23 @@
         </div>
 
         <script>
-
-            var page = makePage();
-
-            $("#progressbar").progressbar({value: 0});
-
-            var map = new google.maps.Map(document.getElementById('map-canvas'),
+            function onLoad()
             {
-                center: new google.maps.LatLng(38.8977, -77.0366),
-                zoom: 15
-            });
+                var page = makePage();
 
-            page.setMap(map);
-            page.replaceBusList("busList");
+                $("#progressbar").progressbar({value: 0});
 
+                var map = new Microsoft.Maps.Map(document.getElementById("map-canvas"),
+                {
+                    credentials: "ApPBchXEpWYzUXGs4zA8zsnwtb3PjVxO7QvBOnx1EgL9Tr0tG_XlZqeCquUQiThq",
+                    center: new Microsoft.Maps.Location(38.8977, -77.0366),
+                    mapTypeId: Microsoft.Maps.MapTypeId.road,
+                    zoom: 15
+                });
+
+                page.setMap(map);
+                page.replaceBusList("busList");
+            }
 
             function onChange()
             {

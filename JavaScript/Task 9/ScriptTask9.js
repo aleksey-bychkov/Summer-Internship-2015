@@ -445,6 +445,8 @@ function makePage()
                     buses[index].markers[x].setMap(null);
                 }());
             }
+
+            buses[index].markers = [];
             $(buses[index].checkBox).prop('checked', false);
             buses[index].made = false;
         }

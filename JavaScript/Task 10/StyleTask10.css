@@ -38,6 +38,7 @@ ul
 
 #map-canvas
 {
+    position: relative;
     width: 1500px;
     float: left;
 }

@@ -2,131 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task 10/nextBus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task 10/transitIQ.png" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\1c\006cdcf6811b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\28\90f9aed17f1b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\59\1054eb5f801b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\5d\9088acd17f1b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\64\f072add17f1b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\67\9147c3fe811b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\7b\405ad0f47f1b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\7f\505daed17f1b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\a\70ec8004801b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\b6\90c97e04801b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\ba\9047c3fe811b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\ba\e0bcafd17f1b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.history\cc\90380cd4811b00151d76d4c12fe856b1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.indexes\5b\a8\85\history.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.indexes\5b\a8\history.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.indexes\5b\history.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.indexes\af\history.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.indexes\e4\c7\29\history.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.indexes\e4\c7\a9\history.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.indexes\e4\c8\29\history.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.indexes\e4\c8\a9\history.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.indexes\properties.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\.markers" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\org.eclipse.egit.core\GitProjectData.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\org.eclipse.jdt.core\state.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project 1\org.eclipse.wst.jsdt.core\state.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project2\org.eclipse.jdt.core\state.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.projects\Project2\org.eclipse.wst.jsdt.core\state.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.core.resources\.root\2.tree" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.debug.core\.launches\servlet_project2.controllers.LoginController.launch" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.epp.logging.aeri.ui\remote-index\_0.fdt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.epp.logging.aeri.ui\remote-index\_0.fdx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.epp.logging.aeri.ui\remote-index\_0.tis" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.epp.logging.aeri.ui\remote-index\_1.fnm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.epp.logging.aeri.ui\remote-index\_1.nrm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.epp.logging.aeri.ui\remote-index\_1.tii" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.epp.logging.aeri.ui\remote-index\segments_2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.jdt.core\2234368573.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.jdt.core\3891760607.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\taglibindex\3891760607.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\05b0fe8524860bd73cbb07ef30fb34cc\segments_3" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1o.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1o_3.del" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1p.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1p_1.del" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1q.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1q_1.del" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1r.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1s.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1t.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\_1u.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\08366b050b8a22df35541496fc373eb0\segments_1q" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0\segments_6" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes\3891760607.index" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\Project 1\META-INF\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\Project 1\WEB-INF\classes\project2\controllers\LoginController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\Project 1\WEB-INF\classes\project2\model\Authenticator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\Project 1\WEB-INF\classes\project2\model\User.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\Project 1\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\Project 1\error.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\Project 1\login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\Project 1\success.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\.settings\.jsdtscope" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\.settings\org.eclipse.wst.common.component" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\.settings\org.eclipse.wst.common.project.facet.core.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\.settings\org.eclipse.wst.jsdt.ui.superType.container" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\.settings\org.eclipse.wst.jsdt.ui.superType.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\WebContent\META-INF\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\WebContent\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\WebContent\error.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\WebContent\login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\WebContent\success.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\src\project2\controllers\LoginController.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\src\project2\model\Authenticator.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Java\Project 1\src\project2\model\User.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.resources/.projects/Project2/.markers" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.resources/.projects/Project2/.markers" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.jdt/Project2.container" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.jdt/Project2.container" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.validation/dep.index" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.validation/dep.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.resources/.projects/Project2/.indexes/history.index" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.resources/.projects/Project2/.indexes/history.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.resources/.projects/Project2/.indexes/e4/b9/b3/a8/history.index" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.resources/.projects/Project2/.indexes/e4/b9/b3/a8/history.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/publish/publish0.dat" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/publish/publish0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/segments.gen" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/nexus/08366b050b8a22df35541496fc373eb0/segments.gen" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/nexus/08366b050b8a22df35541496fc373eb0/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.log" afterPath="$PROJECT_DIR$/../Java/.metadata/.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jst.jsp.core/taglibindex/3010713937.dat" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jst.jsp.core/taglibindex/3010713937.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/ScriptTask10.js" afterPath="$PROJECT_DIR$/Task 10/ScriptTask10.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/ScriptTask9.js" afterPath="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/StyleTask9.css" afterPath="$PROJECT_DIR$/Task 9/StyleTask9.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/Task9.html" afterPath="$PROJECT_DIR$/Task 9/Task9.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core.ui/dialog_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.logging.aeri.ui.prefs" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.logging.aeri.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/Project2/META-INF/maven/test/Project2/pom.properties" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/Project2/META-INF/maven/test/Project2/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/Project2/target/m2e-wtp/web-resources/META-INF/maven/test/Project2/pom.properties" afterPath="$PROJECT_DIR$/../Java/Project2/target/m2e-wtp/web-resources/META-INF/maven/test/Project2/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/Project2/META-INF/maven/test/Project2/pom.xml" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/Project2/META-INF/maven/test/Project2/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/Project2/pom.xml" afterPath="$PROJECT_DIR$/../Java/Project2/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/Project2/target/m2e-wtp/web-resources/META-INF/maven/test/Project2/pom.xml" afterPath="$PROJECT_DIR$/../Java/Project2/target/m2e-wtp/web-resources/META-INF/maven/test/Project2/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/preview.xml" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/preview.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/savedIndexNames.txt" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/savedIndexNames.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/version.ini" afterPath="$PROJECT_DIR$/../Java/.metadata/version.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/Project2/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/Project2/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/Project2/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../Java/Project2/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/StyleTask10.css" afterPath="$PROJECT_DIR$/Task 10/StyleTask10.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/Task10.html" afterPath="$PROJECT_DIR$/Task 10/Task10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,32 +27,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Task9.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Task 9/Task9.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18327402">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Task10.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 10/Task10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.192308">
-              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="55" selection-end-column="43" />
+            <state vertical-scroll-proportion="-30.153847">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTask10.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScriptTask10.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 10/ScriptTask10.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.7669565">
+              <caret line="368" column="24" selection-start-line="368" selection-start-column="24" selection-end-line="368" selection-end-column="24" />
+              <folding>
+                <element signature="e#677#1396#0" expanded="false" />
+                <element signature="n#!!block;n#setServerAddress#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#setTime#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#setMap#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="e#7562#8598#0" expanded="false" />
+                <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="e#15375#15426#0" expanded="false" />
+                <element signature="e#15585#15954#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/Task 10/StyleTask10.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -246,10 +128,12 @@
         <option value="$PROJECT_DIR$/Task 9/Task8.html" />
         <option value="$PROJECT_DIR$/Task 9/ScriptTask8.js" />
         <option value="$PROJECT_DIR$/Task 10/index.html" />
-        <option value="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
         <option value="$PROJECT_DIR$/Task 9/StyleTask9.css" />
-        <option value="$PROJECT_DIR$/Task 10/Task10.html" />
         <option value="$PROJECT_DIR$/Task 9/Task9.html" />
+        <option value="$PROJECT_DIR$/Task 10/StyleTask10.css" />
+        <option value="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
+        <option value="$PROJECT_DIR$/Task 10/Task10.html" />
+        <option value="$PROJECT_DIR$/Task 10/ScriptTask10.js" />
       </list>
     </option>
   </component>
@@ -385,7 +269,7 @@
       <recent name="C:\Users\aleks_000\Documents\GitHub\Summer-Internship-2015\Task 2" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Task9.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.Task10.html">
     <configuration default="false" name="Task8.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/Task 8/Task8.html">
       <method />
     </configuration>
@@ -911,18 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3930435">
-          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="e#7391#7459#0" expanded="false" />
-            <element signature="e#14808#15844#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task 9/StyleTask9.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22173913">
@@ -931,35 +803,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Task 9/Task9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.846153">
+          <caret line="51" column="64" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Task 10/StyleTask10.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="293" column="42" selection-start-line="293" selection-start-column="42" selection-end-line="293" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="e#7391#7459#0" expanded="false" />
+            <element signature="e#14808#15844#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 10/Task10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.153847">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 10/ScriptTask10.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 10/Task10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.192308">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="55" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 9/Task9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18327402">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding />
+        <state vertical-scroll-proportion="0.7669565">
+          <caret line="368" column="24" selection-start-line="368" selection-start-column="24" selection-end-line="368" selection-end-column="24" />
+          <folding>
+            <element signature="e#677#1396#0" expanded="false" />
+            <element signature="n#!!block;n#setServerAddress#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="n#!!block;n#setTime#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="n#!!block;n#setMap#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="n#!!block;n#setNextBusImage#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="e#7562#8598#0" expanded="false" />
+            <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="e#15375#15426#0" expanded="false" />
+            <element signature="e#15585#15954#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
