@@ -1,5 +1,6 @@
 html, body, ul, #map-canvas, #bus-numbers
 {
+    position: relative;
     height: 850px;
     margin: 0px;
     padding: 0px;
@@ -23,7 +24,6 @@ html, body, ul, #map-canvas, #bus-numbers
 
 ul
 {
-    height: 700px;
     list-style-type: none;
     columns: 2;
     -webkit-columns: 2;
@@ -31,14 +31,13 @@ ul
 
 #progressbar
 {
-    width: 405px;
+    width: 400px;
     height: 40px;
     float: right;
 }
 
 #map-canvas
 {
-    position: relative;
     width: 1500px;
     float: left;
 }

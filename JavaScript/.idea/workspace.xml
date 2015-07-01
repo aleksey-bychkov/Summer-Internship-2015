@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Task 10/ScriptTask10.js" line="313" />
+    <bookmark url="file://$PROJECT_DIR$/Task 10/ScriptTask10.js" line="320" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8aecfd4c-e0dd-4be5-9ec0-2a5e81a97668" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/ScriptTask10.js" afterPath="$PROJECT_DIR$/Task 10/ScriptTask10.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/ScriptTask9.js" afterPath="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/StyleTask10.css" afterPath="$PROJECT_DIR$/Task 10/StyleTask10.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/StyleTask9.css" afterPath="$PROJECT_DIR$/Task 9/StyleTask9.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 10/Task10.html" afterPath="$PROJECT_DIR$/Task 10/Task10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task 9/Task9.html" afterPath="$PROJECT_DIR$/Task 9/Task9.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../Java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,26 +36,9 @@
       <file leaf-file-name="Task10.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 10/Task10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.653847">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state vertical-scroll-proportion="-22.961538">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptTask9.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27565217">
-              <caret line="221" column="8" selection-start-line="221" selection-start-column="8" selection-end-line="221" selection-end-column="8" />
-              <folding>
-                <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-                <element signature="e#7391#7459#0" expanded="false" />
-                <element signature="n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
-                <element signature="e#7660#8634#0" expanded="false" />
-                <element signature="n#!!block;n#updateBounds#0;n#!!block;n#makePage#0" expanded="false" />
-                <element signature="e#14728#15764#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -59,9 +47,9 @@
         <entry file="file://$PROJECT_DIR$/Task 10/ScriptTask10.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="346" column="4" selection-start-line="346" selection-start-column="4" selection-end-line="346" selection-end-column="4" />
+              <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
               <folding>
-                <element signature="e#677#1396#0" expanded="false" />
+                <element signature="e#739#1458#0" expanded="false" />
                 <element signature="n#!!block;n#setServerAddress#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#setTime#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#setMap#0;n#!!block;n#makePage#0" expanded="false" />
@@ -69,7 +57,6 @@
                 <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-                <element signature="n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#updateBounds#0;n#!!block;n#makePage#0" expanded="false" />
                 <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
@@ -83,7 +70,47 @@
         <entry file="file://$PROJECT_DIR$/Task 10/StyleTask10.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task9.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Task 9/Task9.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8291815">
+              <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptTask9.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="67" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
+              <folding>
+                <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="e#7625#7693#0" expanded="false" />
+                <element signature="n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="e#7894#8868#0" expanded="false" />
+                <element signature="n#!!block;n#updateBounds#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
+                <element signature="e#14962#15998#0" expanded="false" />
+                <element signature="n#!!block;n#clearMap#0;n#!!block;n#makePage#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StyleTask9.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 9/StyleTask9.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -149,10 +176,10 @@
         <option value="$PROJECT_DIR$/Task 9/ScriptTask8.js" />
         <option value="$PROJECT_DIR$/Task 10/index.html" />
         <option value="$PROJECT_DIR$/Task 9/StyleTask9.css" />
-        <option value="$PROJECT_DIR$/Task 9/Task9.html" />
         <option value="$PROJECT_DIR$/Task 10/StyleTask10.css" />
-        <option value="$PROJECT_DIR$/Task 10/Task10.html" />
         <option value="$PROJECT_DIR$/Task 10/ScriptTask10.js" />
+        <option value="$PROJECT_DIR$/Task 10/Task10.html" />
+        <option value="$PROJECT_DIR$/Task 9/Task9.html" />
         <option value="$PROJECT_DIR$/Task 9/ScriptTask9.js" />
       </list>
     </option>
@@ -817,8 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 9/StyleTask9.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22173913">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -826,23 +853,15 @@
     <entry file="file://$PROJECT_DIR$/Task 10/StyleTask10.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 9/Task9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75088966">
-          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 10/Task10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.653847">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state vertical-scroll-proportion="-22.961538">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -850,9 +869,9 @@
     <entry file="file://$PROJECT_DIR$/Task 10/ScriptTask10.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="346" column="4" selection-start-line="346" selection-start-column="4" selection-end-line="346" selection-end-column="4" />
+          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
           <folding>
-            <element signature="e#677#1396#0" expanded="false" />
+            <element signature="e#739#1458#0" expanded="false" />
             <element signature="n#!!block;n#setServerAddress#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#setTime#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#setMap#0;n#!!block;n#makePage#0" expanded="false" />
@@ -860,7 +879,6 @@
             <element signature="n#!!block;n#setTransitIQImage#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#updateShowingOnlyNextBus#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#updateBounds#0;n#!!block;n#makePage#0" expanded="false" />
             <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
@@ -871,16 +889,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 9/ScriptTask9.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27565217">
-          <caret line="221" column="8" selection-start-line="221" selection-start-column="8" selection-end-line="221" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="67" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
           <folding>
             <element signature="n#!!block;n#replaceBusList#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="e#7391#7459#0" expanded="false" />
+            <element signature="n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="e#7625#7693#0" expanded="false" />
             <element signature="n#!!block;n#placeIncrementOfMarkers#0;n#!!block;n#placeLotsOfMarkers#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="e#7660#8634#0" expanded="false" />
+            <element signature="e#7894#8868#0" expanded="false" />
             <element signature="n#!!block;n#updateBounds#0;n#!!block;n#makePage#0" expanded="false" />
-            <element signature="e#14728#15764#0" expanded="false" />
+            <element signature="n#!!block;n#show#0;n#!!block;n#makePage#0" expanded="false" />
+            <element signature="e#14962#15998#0" expanded="false" />
+            <element signature="n#!!block;n#clearMap#0;n#!!block;n#makePage#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 9/Task9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8291815">
+          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

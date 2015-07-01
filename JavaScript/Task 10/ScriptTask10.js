@@ -9,7 +9,8 @@ function makePage()
         setMap: setMap,
         setNextBusImage: setNextBusImage,
         setTransitIQImage: setTransitIQImage,
-        setTime: setTime
+        setTime: setTime,
+        setProgressBar: setProgressBar
     };
 
     var map;
@@ -21,6 +22,7 @@ function makePage()
     var infoWindow;
     var endDate = new Date();
     var startDate = new Date(endDate.getTime() - (60 * 60 * 1000));
+    var $progressbar;
 
 
     var url =
@@ -73,6 +75,11 @@ function makePage()
     function setTransitIQImage(pmarkerImage)
     {
         transitIQImage = pmarkerImage;
+    }
+
+    function setProgressBar(pProgressBarID)
+    {
+        $progressbar= $("#" + pProgressBarID);
     }
 
     //when calles changes ShowingOnlyNextBus calls shows and returns the new ShowingOnlyNextBus value
@@ -205,7 +212,7 @@ function makePage()
         var markers = [];
         var bounds = [];
 
-        var $progressbar = $("#progressbar");
+
 
         $progressbar.progressbar("value", 0);
 

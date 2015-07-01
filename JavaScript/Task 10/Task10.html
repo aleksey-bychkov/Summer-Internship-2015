@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
-        <title>Task 10</title>
+    <title>Task 10</title>
 
-        <link rel="stylesheet" href="StyleTask10.css" />
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="StyleTask10.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
-        <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-        <script src="ScriptTask10.js" ></script>
+    <script src="ScriptTask10.js" ></script>
 
 
-    </head>
-    <body onload="onLoad()">
-        <div id="map-canvas"></div>
+</head>
+<body onload="onLoad()">
+<div id="map-canvas"></div>
 
-        <div id="progressbar"></div>
+<div id="progressbar"></div>
 
-        <div id="time">
-            <select id="timeDropDown" onchange="onChange()">
-                <option value="3600000">Past Hour</option>
-                <option value="7200000">Past 2 Hours</option>
-                <option value="18000000">Past 5 hours</option>
-            </select>
-            <label><input type="checkbox" id="nextBusOnly" onclick="page.updateShowingOnlyNextBus(this)"> <strong>Display NextBus only</strong></label>
-        </div>
+<div id="time">
+    <select id="timeDropDown" onchange="onChange()">
+        <option value="3600000">Past Hour</option>
+        <option value="7200000">Past 2 Hours</option>
+        <option value="18000000">Past 5 hours</option>
+    </select>
+    <label><input type="checkbox" id="nextBusOnly" onclick="page.updateShowingOnlyNextBus(this)"> <strong>Display NextBus only</strong></label>
+</div>
 
-        <div id="buses">
-            <section id="changes">
-                <ul id="busList">
+<div id="buses">
+    <section id="changes">
+        <ul id="busList">
 
-                </ul>
-            </section>
-        </div>
+        </ul>
+    </section>
+</div>
 
-        <script>
-            var page;
+<script>
+    var page;
+    function onLoad()
+    {
+        page = makePage();
+        $("#progressbar").progressbar({value: 0});
 
-            function onLoad()
-            {
-                page = makePage();
-
-                $("#progressbar").progressbar({value: 0});
-
-                var map = new Microsoft.Maps.Map(document.getElementById("map-canvas"),
+        var map = new Microsoft.Maps.Map(document.getElementById("map-canvas"),
                 {
                     credentials: "ApPBchXEpWYzUXGs4zA8zsnwtb3PjVxO7QvBOnx1EgL9Tr0tG_XlZqeCquUQiThq",
                     center: new Microsoft.Maps.Location(38.8977, -77.0366),
@@ -57,18 +55,16 @@
                     zoom: 15
                 });
 
-
-                page.setMap(map);
-                page.replaceBusList("busList");
-            }
-
-            function onChange()
-            {
-                var endTime = new Date();
-                var startTime = new Date(endTime.getTime() - parseInt($("#timeDropDown").val()));
-
-                page.setTime(endTime,startTime);
-            }
-        </script>
-    </body>
+        page.setMap(map);
+        page.setProgressBar("progressbar");
+        page.replaceBusList("busList");
+    }
+    function onChange()
+    {
+        var endTime = new Date();
+        var startTime = new Date(endTime.getTime() - parseInt($("#timeDropDown").val()));
+        page.setTime(endTime,startTime);
+    }
+</script>
+</body>
 </html>

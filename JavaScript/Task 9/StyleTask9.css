@@ -31,7 +31,7 @@ ul
 
 #progressbar
 {
-    width: 405px;
+    width: 400px;
     height: 40px;
     float: right;
 }
@@ -44,6 +44,6 @@ ul
 
 #bus-numbers
 {
-    width: 400px;
+    width: 100%;
     float: right;
 }

@@ -9,7 +9,8 @@ function makePage()
         setMap: setMap,
         setNextBusImage: setNextBusImage,
         setTransitIQImage: setTransitIQImage,
-        setTime: setTime
+        setTime: setTime,
+        setProgressBar: setProgressBar
     };
 
     var map;
@@ -21,7 +22,7 @@ function makePage()
     var infoWindow;
     var endDate = new Date();
     var startDate = new Date(endDate.getTime() - (60 * 60 * 1000));
-
+    var $progressbar;
 
     var url =
     {
@@ -56,7 +57,13 @@ function makePage()
 
         clearMap()
     }
-    
+
+    //sets up the $progressbar veariable to the paramater
+    function setProgressBar(pProgressBarID)
+    {
+        $progressbar = $("#" + pProgressBarID);
+    }
+
     //sets the map the the paramater map
     function setMap(pmap)
     {
@@ -198,15 +205,13 @@ function makePage()
         }
     }
 
-    //places markers from pStartDate to pEndDate with the VehicleId of pVehicleId on the map
+    //places markers from pStartDate to pEndDate with the VehicleId of pVehicleId on the map getting stuff from the server with interval(in milisecounds)
     function placeLotsOfMarkers(pstartDate, pendDate, interval, vehicleId)
     {
         var bounds = new google.maps.LatLngBounds();
         var numIntervals = (pendDate.getTime() - pstartDate.getTime()) / interval;
         var currentInterval = 0;
         var markers = [];
-
-        var $progressbar = $("#progressbar");
 
         $progressbar.progressbar("value", 0);
 
